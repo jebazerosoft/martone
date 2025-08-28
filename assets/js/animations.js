@@ -425,31 +425,12 @@
     }
 
     /**
-     * Page Transition Effects
+     * Page Transition Effects (Disabled to prevent navigation issues)
      */
     function initializePageTransitions() {
-        // Smooth page transitions
-        $('a[href]:not([href^="#"]):not([target="_blank"])').on('click', function(e) {
-            if (this.hostname !== window.location.hostname) return;
-            
-            e.preventDefault();
-            const href = this.href;
-            
-            // Create transition overlay
-            const $overlay = $('<div class="page-transition-overlay"></div>');
-            $('body').append($overlay);
-            
-            $overlay.animate({ width: '100%' }, 400, 'easeInOutCubic', function() {
-                window.location.href = href;
-            });
-        });
-
-        // Page load animation
-        $(window).on('load', function() {
-            $('.page-transition-overlay').animate({ width: '0%' }, 400, 'easeInOutCubic', function() {
-                $(this).remove();
-            });
-        });
+        // Page transitions disabled to allow normal navigation
+        // Smooth page transitions can interfere with menu clicks
+        console.log('Page transitions disabled for better navigation');
     }
 
     /**

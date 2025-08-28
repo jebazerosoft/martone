@@ -92,7 +92,7 @@ $(document).ready(function() {
                 e.preventDefault();
                 $('html, body').animate({
                     scrollTop: target.offset().top - 80
-                }, 800, 'easeInOutCubic');
+                }, 800);
             }
         });
 
@@ -361,7 +361,7 @@ $(document).ready(function() {
         $backToTop.on('click', function() {
             $('html, body').animate({
                 scrollTop: 0
-            }, 800, 'easeInOutCubic');
+            }, 800);
         });
     }
 

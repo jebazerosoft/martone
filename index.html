@@ -102,7 +102,11 @@
     <!-- Hero Banner Section -->
     <section class="hero-banner">
         <div class="banner-video-container">
-            <iframe class="banner-video" src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1&mute=1&loop=1&playlist=dQw4w9WgXcQ&controls=0&showinfo=0&rel=0&modestbranding=1" title="Martone Music Video" frameborder="0" allowfullscreen></iframe>
+            <video class="banner-video" autoplay muted loop playsinline>
+                <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+                <!-- Fallback image -->
+                <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=1920&h=1080&fit=crop&q=80" alt="Martone Banner">
+            </video>
             <div class="banner-overlay"></div>
         </div>
         <div class="banner-content">
@@ -118,11 +122,11 @@
                         <div class="banner-buttons">
                             <a href="music.html" class="btn btn-primary btn-lg me-3">
                                 <i class="fas fa-play me-2"></i>
-                                Watch Videos
+                                Listen Now
                             </a>
                             <a href="store.html" class="btn btn-outline-light btn-lg">
                                 <i class="fas fa-shopping-cart me-2"></i>
-                                Shop Now
+                                Shop Merch
                             </a>
                         </div>
                     </div>
@@ -137,58 +141,88 @@
             <div class="row">
                 <div class="col-12">
                     <div class="section-header text-center mb-5">
-                        <h2 class="section-title">Videos & Music</h2>
-                        <p class="section-subtitle">Latest releases and music videos from The Emperor of House Music</p>
+                        <h2 class="section-title">Latest Music & Videos</h2>
+                        <p class="section-subtitle">Experience the sound of The Emperor of House Music</p>
                     </div>
                 </div>
             </div>
             
-            <!-- Music Videos Row -->
+            <!-- Featured Music -->
             <div class="row g-4 mb-5">
-                <div class="col-lg-6">
-                    <div class="video-card">
-                        <div class="video-embed">
-                            <iframe src="https://open.spotify.com/embed/track/4ShY6QfS1VPi5blSoosaC3" width="100%" height="352" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                <div class="col-lg-4">
+                    <div class="music-card">
+                        <div class="music-artwork">
+                            <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=400&h=400&fit=crop&q=80" alt="Too Bad So Sad">
+                            <div class="play-overlay">
+                                <i class="fas fa-play"></i>
+                            </div>
                         </div>
-                        <div class="video-info">
-                            <h4>"Love You I Do" - #5 iTunes Charts</h4>
-                            <p>The hit single that reached top 5 on iTunes Fitness and Workout charts</p>
+                        <div class="music-info">
+                            <h4>"Too Bad, So Sad"</h4>
+                            <p>feat. Intelligent Diva</p>
+                            <span class="release-year">2025</span>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6">
-                    <div class="video-card">
-                        <div class="video-embed">
-                            <iframe src="https://open.spotify.com/embed/track/4ShY6QfS1VPi5blSoosaC3" width="100%" height="352" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                <div class="col-lg-4">
+                    <div class="music-card">
+                        <div class="music-artwork">
+                            <img src="https://images.unsplash.com/photo-1518609878373-06d740f60d8b?w=400&h=400&fit=crop&q=80" alt="Love You I Do">
+                            <div class="play-overlay">
+                                <i class="fas fa-play"></i>
+                            </div>
                         </div>
-                        <div class="video-info">
-                            <h4>"Chocolate (Drumapella Mix)" - UK Charts</h4>
-                            <p>10 years later, still climbing the UK Electronic Dance Charts</p>
+                        <div class="music-info">
+                            <h4>"Love You I Do"</h4>
+                            <p>#5 iTunes Fitness Charts</p>
+                            <span class="release-year">2024</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="music-card">
+                        <div class="music-artwork">
+                            <img src="https://images.unsplash.com/photo-1571266028243-c4b51c6ce95f?w=400&h=400&fit=crop&q=80" alt="Chocolate Drumapella">
+                            <div class="play-overlay">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div class="music-info">
+                            <h4>"Chocolate (Drumapella Mix)"</h4>
+                            <p>#14 UK Electronic Dance Charts</p>
+                            <span class="release-year">2024</span>
                         </div>
                     </div>
                 </div>
             </div>
             
-            <!-- Music Streaming Links -->
+            <!-- Streaming Platforms -->
             <div class="row justify-content-center">
-                <div class="col-lg-8 text-center">
-                    <div class="streaming-links">
-                        <a href="https://open.spotify.com/artist/4ShY6QfS1VPi5blSoosaC3" target="_blank" class="streaming-link">
-                            <i class="fab fa-spotify"></i>
-                            <span>Spotify</span>
-                        </a>
-                        <a href="https://music.apple.com/us/artist/martone/1127153006" target="_blank" class="streaming-link">
-                            <i class="fab fa-apple"></i>
-                            <span>Apple Music</span>
-                        </a>
-                        <a href="#" target="_blank" class="streaming-link">
-                            <i class="fab fa-youtube"></i>
-                            <span>YouTube</span>
-                        </a>
-                        <a href="#" target="_blank" class="streaming-link">
-                            <i class="fab fa-soundcloud"></i>
-                            <span>SoundCloud</span>
-                        </a>
+                <div class="col-lg-10">
+                    <div class="streaming-platforms">
+                        <h3 class="text-center mb-4">Stream Everywhere</h3>
+                        <div class="platform-links">
+                            <a href="https://open.spotify.com/artist/4ShY6QfS1VPi5blSoosaC3" target="_blank" class="platform-link">
+                                <i class="fab fa-spotify"></i>
+                                <span>Spotify</span>
+                            </a>
+                            <a href="https://music.apple.com/us/artist/martone/1127153006" target="_blank" class="platform-link">
+                                <i class="fab fa-apple"></i>
+                                <span>Apple Music</span>
+                            </a>
+                            <a href="#" target="_blank" class="platform-link">
+                                <i class="fab fa-youtube"></i>
+                                <span>YouTube Music</span>
+                            </a>
+                            <a href="#" target="_blank" class="platform-link">
+                                <i class="fab fa-amazon"></i>
+                                <span>Amazon Music</span>
+                            </a>
+                            <a href="#" target="_blank" class="platform-link">
+                                <i class="fab fa-soundcloud"></i>
+                                <span>SoundCloud</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -196,113 +230,109 @@
         </div>
     </section>
     
-    <!-- Images Carousel Section -->
-    <section class="images-carousel-section py-5">
+    <!-- Gallery & Live Updates Section -->
+    <section class="gallery-section py-5">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-9">
                     <div class="section-header text-center mb-5">
-                        <h2 class="section-title">Gallery</h2>
-                        <p class="section-subtitle">Behind the scenes and live performances</p>
+                        <h2 class="section-title">Behind the Scenes</h2>
+                        <p class="section-subtitle">Exclusive moments from The Emperor's journey</p>
                     </div>
                     
-                    <!-- Main Carousel -->
-                    <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active"></button>
-                            <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="1"></button>
-                            <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="2"></button>
-                            <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="3"></button>
-                        </div>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <div class="carousel-image-placeholder">
-                                    <i class="fas fa-music"></i>
-                                    <h4>Studio Recording Session</h4>
-                                    <p>Behind the scenes of "The Evolution of Martone"</p>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="carousel-image-placeholder">
-                                    <i class="fas fa-microphone"></i>
-                                    <h4>Live Performance</h4>
-                                    <p>The Emperor commanding the stage</p>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="carousel-image-placeholder">
-                                    <i class="fas fa-book-open"></i>
-                                    <h4>Book Launch Event</h4>
-                                    <p>"Deep & Raw" bestseller celebration</p>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="carousel-image-placeholder">
-                                    <i class="fas fa-trophy"></i>
-                                    <h4>Awards Night</h4>
-                                    <p>Detroit Music Awards nomination</p>
-                                </div>
+                    <!-- Image Gallery Grid -->
+                    <div class="gallery-grid">
+                        <div class="gallery-item large">
+                            <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=600&h=400&fit=crop&q=80" alt="Studio Session">
+                            <div class="gallery-overlay">
+                                <h4>Studio Sessions</h4>
+                                <p>Creating the next masterpiece</p>
                             </div>
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon"></span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
-                            <span class="carousel-control-next-icon"></span>
-                        </button>
+                        <div class="gallery-item">
+                            <img src="https://images.unsplash.com/photo-1518609878373-06d740f60d8b?w=300&h=300&fit=crop&q=80" alt="Live Performance">
+                            <div class="gallery-overlay">
+                                <h4>Live Shows</h4>
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="https://images.unsplash.com/photo-1571266028243-c4b51c6ce95f?w=300&h=300&fit=crop&q=80" alt="Book Signing">
+                            <div class="gallery-overlay">
+                                <h4>Book Events</h4>
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="https://images.unsplash.com/photo-1583394838336-acd977736f90?w=300&h=300&fit=crop&q=80" alt="Awards">
+                            <div class="gallery-overlay">
+                                <h4>Award Shows</h4>
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="https://images.unsplash.com/photo-1514320291840-2e0a9bf2a9ae?w=300&h=300&fit=crop&q=80" alt="Media">
+                            <div class="gallery-overlay">
+                                <h4>Press & Media</h4>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 
-                <!-- Live Right Sidebar -->
+                <!-- Live Updates Sidebar -->
                 <div class="col-lg-3">
-                    <div class="live-sidebar">
-                        <h3 class="sidebar-title">Live Updates</h3>
-                        <div class="live-images">
-                            <div class="live-image-item">
-                                <div class="live-image-placeholder">
-                                    <i class="fas fa-camera"></i>
-                                </div>
-                                <div class="live-content">
-                                    <p class="live-text">New studio session today! 🎵</p>
-                                    <span class="live-time">2 hours ago</span>
-                                </div>
+                    <div class="live-updates">
+                        <h3 class="updates-title">Live Feed</h3>
+                        <div class="update-item">
+                            <div class="update-image">
+                                <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=60&h=60&fit=crop&q=80" alt="Update">
                             </div>
-                            <div class="live-image-item">
-                                <div class="live-image-placeholder">
-                                    <i class="fas fa-headphones"></i>
-                                </div>
-                                <div class="live-content">
-                                    <p class="live-text">Mixing the new track... sounds incredible!</p>
-                                    <span class="live-time">5 hours ago</span>
-                                </div>
+                            <div class="update-content">
+                                <p>"Too Bad, So Sad" now streaming everywhere!</p>
+                                <span class="update-time">2 hours ago</span>
                             </div>
-                            <div class="live-image-item">
-                                <div class="live-image-placeholder">
-                                    <i class="fas fa-star"></i>
-                                </div>
-                                <div class="live-content">
-                                    <p class="live-text">Thank you for all the love on "Chocolate"!</p>
-                                    <span class="live-time">1 day ago</span>
-                                </div>
+                        </div>
+                        <div class="update-item">
+                            <div class="update-image">
+                                <img src="https://images.unsplash.com/photo-1518609878373-06d740f60d8b?w=60&h=60&fit=crop&q=80" alt="Update">
                             </div>
-                            <div class="live-image-item">
-                                <div class="live-image-placeholder">
-                                    <i class="fas fa-fire"></i>
-                                </div>
-                                <div class="live-content">
-                                    <p class="live-text">Book signing event was amazing 📚</p>
-                                    <span class="live-time">2 days ago</span>
-                                </div>
+                            <div class="update-content">
+                                <p>"Deep & Raw" hits #3 on Amazon bestsellers</p>
+                                <span class="update-time">1 day ago</span>
+                            </div>
+                        </div>
+                        <div class="update-item">
+                            <div class="update-image">
+                                <img src="https://images.unsplash.com/photo-1571266028243-c4b51c6ce95f?w=60&h=60&fit=crop&q=80" alt="Update">
+                            </div>
+                            <div class="update-content">
+                                <p>"Chocolate" climbs UK Electronic Dance Charts</p>
+                                <span class="update-time">3 days ago</span>
+                            </div>
+                        </div>
+                        <div class="update-item">
+                            <div class="update-image">
+                                <img src="https://images.unsplash.com/photo-1583394838336-acd977736f90?w=60&h=60&fit=crop&q=80" alt="Update">
+                            </div>
+                            <div class="update-content">
+                                <p>10th Anniversary Edition now available</p>
+                                <span class="update-time">1 week ago</span>
                             </div>
                         </div>
                         
-                        <div class="sidebar-cta">
-                            <h4>Follow Live</h4>
-                            <p>Get real-time updates from Martone</p>
-                            <a href="https://instagram.com/therealmartone" target="_blank" class="btn btn-primary btn-sm">
-                                <i class="fab fa-instagram me-2"></i>
-                                Follow @therealmartone
-                            </a>
+                        <div class="social-follow">
+                            <h4>Stay Connected</h4>
+                            <div class="social-buttons">
+                                <a href="https://instagram.com/therealmartone" class="social-btn instagram">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="#" class="social-btn twitter">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#" class="social-btn facebook">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                                <a href="#" class="social-btn youtube">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -85,7 +85,7 @@ $(document).ready(function() {
             }
         });
 
-        // Smooth scroll for anchor links
+        // Smooth scroll for anchor links only
         $('a[href^="#"]').on('click', function(e) {
             const target = $(this.getAttribute('href'));
             if (target.length) {
@@ -95,6 +95,9 @@ $(document).ready(function() {
                 }, 800, 'easeInOutCubic');
             }
         });
+
+        // Allow normal navigation for page links
+        $('.nav-link[href$=".html"]').off('click');
     }
 
     /**

@@ -539,18 +539,9 @@ $(document).ready(function() {
 
 /**
  * Service Worker Registration (for PWA capabilities)
+ * Disabled to prevent 404 errors in development
  */
-if ('serviceWorker' in navigator) {
-    window.addEventListener('load', function() {
-        navigator.serviceWorker.register('/service-worker.js')
-            .then(function(registration) {
-                console.log('ServiceWorker registration successful');
-            })
-            .catch(function(error) {
-                console.log('ServiceWorker registration failed');
-            });
-    });
-}
+// Service worker registration removed to prevent console errors
 
 /**
  * Global Error Handling

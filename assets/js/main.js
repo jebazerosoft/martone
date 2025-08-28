@@ -541,6 +541,47 @@ $(document).ready(function() {
 });
 
 /**
+ * Store Functionality
+ */
+function initializeStore() {
+    const $cartSidebar = $('#cartSidebar');
+    const $cartOverlay = $('#cartOverlay');
+    const $closeCart = $('#closeCart');
+    const $addToCartBtns = $('.add-to-cart');
+
+    // Add to cart functionality
+    $addToCartBtns.on('click', function() {
+        showCart();
+        showNotification('Item added to cart!', 'success');
+    });
+
+    // Show cart
+    function showCart() {
+        $cartSidebar.addClass('active');
+        $cartOverlay.addClass('active');
+        $('body').addClass('cart-open');
+    }
+
+    // Hide cart
+    function hideCart() {
+        $cartSidebar.removeClass('active');
+        $cartOverlay.removeClass('active');
+        $('body').removeClass('cart-open');
+    }
+
+    // Close cart events
+    $closeCart.on('click', hideCart);
+    $cartOverlay.on('click', hideCart);
+
+    // Escape key to close cart
+    $(document).on('keydown', function(e) {
+        if (e.key === 'Escape' && $cartSidebar.hasClass('active')) {
+            hideCart();
+        }
+    });
+}
+
+/**
  * Service Worker Registration (for PWA capabilities)
  * Disabled to prevent 404 errors in development
  */

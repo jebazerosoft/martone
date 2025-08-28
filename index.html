@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Martone - The Emperor of House Music | Author | Former TV Show Host & Radio Personality</title>
-    <meta name="description" content="Official website of Martone - The Emperor of House Music, Author, Former TV Show Host & Radio Personality. Discover music, books, and exclusive content.">
+    <title>Martone - The Emperor of House Music</title>
+    <meta name="description" content="Official website of Martone, The Emperor of House Music. Author, former TV show host, and radio personality.">
     
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -16,34 +16,7 @@
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
-    <!-- Loading Screen -->
-    <div id="loading-screen">
-        <div class="loading-content">
-            <div class="loading-logo">MARTONE</div>
-            <div class="loading-spinner"></div>
-        </div>
-    </div>
-
-    <!-- Social Media Sidebar -->
-    <div class="social-sidebar">
-        <a href="#" class="social-link" data-platform="facebook">
-            <i class="fab fa-facebook-f"></i>
-        </a>
-        <a href="#" class="social-link" data-platform="twitter">
-            <i class="fab fa-twitter"></i>
-        </a>
-        <a href="#" class="social-link" data-platform="linkedin">
-            <i class="fab fa-linkedin-in"></i>
-        </a>
-        <a href="#" class="social-link" data-platform="instagram">
-            <i class="fab fa-instagram"></i>
-        </a>
-        <div class="social-more">
-            <i class="fas fa-plus"></i>
-        </div>
-    </div>
-
-    <!-- Navigation -->
+    <!-- Header -->
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
             <a class="navbar-brand" href="index.html">
@@ -99,13 +72,11 @@
         </div>
     </nav>
 
-    <!-- Hero Banner Section -->
+    <!-- Banner with Full Width Video -->
     <section class="hero-banner">
         <div class="banner-video-container">
             <video class="banner-video" autoplay muted loop playsinline>
                 <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
-                <!-- Fallback image -->
-                <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=1920&h=1080&fit=crop&q=80" alt="Martone Banner">
             </video>
             <div class="banner-overlay"></div>
         </div>
@@ -113,22 +84,8 @@
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-8 mx-auto text-center">
-                        <h1 class="banner-title">
-                            <span class="brand-name">MARTONE</span>
-                        </h1>
-                        <p class="banner-subtitle">
-                            THE EMPEROR OF HOUSE MUSIC
-                        </p>
-                        <div class="banner-buttons">
-                            <a href="music.html" class="btn btn-primary btn-lg me-3">
-                                <i class="fas fa-play me-2"></i>
-                                Listen Now
-                            </a>
-                            <a href="store.html" class="btn btn-outline-light btn-lg">
-                                <i class="fas fa-shopping-cart me-2"></i>
-                                Shop Merch
-                            </a>
-                        </div>
+                        <h1 class="banner-title">MARTONE</h1>
+                        <p class="banner-subtitle">THE EMPEROR OF HOUSE MUSIC</p>
                     </div>
                 </div>
             </div>
@@ -139,273 +96,77 @@
     <section class="videos-music-section py-5">
         <div class="container">
             <div class="row">
-                <div class="col-12">
-                    <div class="section-header text-center mb-5">
-                        <h2 class="section-title">Latest Music & Videos</h2>
-                        <p class="section-subtitle">Experience the sound of The Emperor of House Music</p>
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-title">Videos & Music</h2>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="video-card">
+                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Martone Music Video" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="music-card">
+                        <iframe src="https://open.spotify.com/embed/artist/4ShY6QfS1VPi5blSoosaC3" width="100%" height="315" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
                     </div>
                 </div>
             </div>
-            
-            <!-- Featured Music -->
-            <div class="row g-4 mb-5">
-                <div class="col-lg-4">
-                    <div class="music-card">
-                        <div class="music-artwork">
-                            <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=400&h=400&fit=crop&q=80" alt="Too Bad So Sad">
-                            <div class="play-overlay">
-                                <i class="fas fa-play"></i>
-                            </div>
-                        </div>
-                        <div class="music-info">
-                            <h4>"Too Bad, So Sad"</h4>
-                            <p>feat. Intelligent Diva</p>
-                            <span class="release-year">2025</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="music-card">
-                        <div class="music-artwork">
-                            <img src="https://images.unsplash.com/photo-1518609878373-06d740f60d8b?w=400&h=400&fit=crop&q=80" alt="Love You I Do">
-                            <div class="play-overlay">
-                                <i class="fas fa-play"></i>
-                            </div>
-                        </div>
-                        <div class="music-info">
-                            <h4>"Love You I Do"</h4>
-                            <p>#5 iTunes Fitness Charts</p>
-                            <span class="release-year">2024</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="music-card">
-                        <div class="music-artwork">
-                            <img src="https://images.unsplash.com/photo-1571266028243-c4b51c6ce95f?w=400&h=400&fit=crop&q=80" alt="Chocolate Drumapella">
-                            <div class="play-overlay">
-                                <i class="fas fa-play"></i>
-                            </div>
-                        </div>
-                        <div class="music-info">
-                            <h4>"Chocolate (Drumapella Mix)"</h4>
-                            <p>#14 UK Electronic Dance Charts</p>
-                            <span class="release-year">2024</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Streaming Platforms -->
-            <div class="row justify-content-center">
-                <div class="col-lg-10">
-                    <div class="streaming-platforms">
-                        <h3 class="text-center mb-4">Stream Everywhere</h3>
-                        <div class="platform-links">
-                            <a href="https://open.spotify.com/artist/4ShY6QfS1VPi5blSoosaC3" target="_blank" class="platform-link">
-                                <i class="fab fa-spotify"></i>
-                                <span>Spotify</span>
-                            </a>
-                            <a href="https://music.apple.com/us/artist/martone/1127153006" target="_blank" class="platform-link">
-                                <i class="fab fa-apple"></i>
-                                <span>Apple Music</span>
-                            </a>
-                            <a href="#" target="_blank" class="platform-link">
-                                <i class="fab fa-youtube"></i>
-                                <span>YouTube Music</span>
-                            </a>
-                            <a href="#" target="_blank" class="platform-link">
-                                <i class="fab fa-amazon"></i>
-                                <span>Amazon Music</span>
-                            </a>
-                            <a href="#" target="_blank" class="platform-link">
-                                <i class="fab fa-soundcloud"></i>
-                                <span>SoundCloud</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
         </div>
     </section>
-    
-    <!-- Gallery & Live Updates Section -->
+
+    <!-- Images Carousel with Live Sidebar -->
     <section class="gallery-section py-5">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-9">
-                    <div class="section-header text-center mb-5">
-                        <h2 class="section-title">Behind the Scenes</h2>
-                        <p class="section-subtitle">Exclusive moments from The Emperor's journey</p>
-                    </div>
-                    
-                    <!-- Image Gallery Grid -->
-                    <div class="gallery-grid">
-                        <div class="gallery-item large">
-                            <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=600&h=400&fit=crop&q=80" alt="Studio Session">
-                            <div class="gallery-overlay">
-                                <h4>Studio Sessions</h4>
-                                <p>Creating the next masterpiece</p>
+                    <h2 class="section-title text-center mb-4">Gallery</h2>
+                    <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&h=400&fit=crop&q=80" class="d-block w-100" alt="Gallery Image 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://images.unsplash.com/photo-1518609878373-06d740f60d8b?w=800&h=400&fit=crop&q=80" class="d-block w-100" alt="Gallery Image 2">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://images.unsplash.com/photo-1571266028243-c4b51c6ce95f?w=800&h=400&fit=crop&q=80" class="d-block w-100" alt="Gallery Image 3">
                             </div>
                         </div>
-                        <div class="gallery-item">
-                            <img src="https://images.unsplash.com/photo-1518609878373-06d740f60d8b?w=300&h=300&fit=crop&q=80" alt="Live Performance">
-                            <div class="gallery-overlay">
-                                <h4>Live Shows</h4>
-                            </div>
-                        </div>
-                        <div class="gallery-item">
-                            <img src="https://images.unsplash.com/photo-1571266028243-c4b51c6ce95f?w=300&h=300&fit=crop&q=80" alt="Book Signing">
-                            <div class="gallery-overlay">
-                                <h4>Book Events</h4>
-                            </div>
-                        </div>
-                        <div class="gallery-item">
-                            <img src="https://images.unsplash.com/photo-1583394838336-acd977736f90?w=300&h=300&fit=crop&q=80" alt="Awards">
-                            <div class="gallery-overlay">
-                                <h4>Award Shows</h4>
-                            </div>
-                        </div>
-                        <div class="gallery-item">
-                            <img src="https://images.unsplash.com/photo-1514320291840-2e0a9bf2a9ae?w=300&h=300&fit=crop&q=80" alt="Media">
-                            <div class="gallery-overlay">
-                                <h4>Press & Media</h4>
-                            </div>
-                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
                     </div>
                 </div>
                 
-                <!-- Live Updates Sidebar -->
+                <!-- Live Right Sidebar -->
                 <div class="col-lg-3">
-                    <div class="live-updates">
-                        <h3 class="updates-title">Live Feed</h3>
-                        <div class="update-item">
-                            <div class="update-image">
-                                <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=60&h=60&fit=crop&q=80" alt="Update">
-                            </div>
-                            <div class="update-content">
-                                <p>"Too Bad, So Sad" now streaming everywhere!</p>
-                                <span class="update-time">2 hours ago</span>
+                    <div class="live-sidebar">
+                        <h3>Live Updates</h3>
+                        <div class="live-item">
+                            <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=60&h=60&fit=crop&q=80" alt="Update">
+                            <div class="live-content">
+                                <p>New music video released!</p>
+                                <span>2 hours ago</span>
                             </div>
                         </div>
-                        <div class="update-item">
-                            <div class="update-image">
-                                <img src="https://images.unsplash.com/photo-1518609878373-06d740f60d8b?w=60&h=60&fit=crop&q=80" alt="Update">
-                            </div>
-                            <div class="update-content">
-                                <p>"Deep & Raw" hits #3 on Amazon bestsellers</p>
-                                <span class="update-time">1 day ago</span>
+                        <div class="live-item">
+                            <img src="https://images.unsplash.com/photo-1518609878373-06d740f60d8b?w=60&h=60&fit=crop&q=80" alt="Update">
+                            <div class="live-content">
+                                <p>Book signing event</p>
+                                <span>1 day ago</span>
                             </div>
                         </div>
-                        <div class="update-item">
-                            <div class="update-image">
-                                <img src="https://images.unsplash.com/photo-1571266028243-c4b51c6ce95f?w=60&h=60&fit=crop&q=80" alt="Update">
-                            </div>
-                            <div class="update-content">
-                                <p>"Chocolate" climbs UK Electronic Dance Charts</p>
-                                <span class="update-time">3 days ago</span>
+                        <div class="live-item">
+                            <img src="https://images.unsplash.com/photo-1571266028243-c4b51c6ce95f?w=60&h=60&fit=crop&q=80" alt="Update">
+                            <div class="live-content">
+                                <p>Studio session complete</p>
+                                <span>3 days ago</span>
                             </div>
                         </div>
-                        <div class="update-item">
-                            <div class="update-image">
-                                <img src="https://images.unsplash.com/photo-1583394838336-acd977736f90?w=60&h=60&fit=crop&q=80" alt="Update">
-                            </div>
-                            <div class="update-content">
-                                <p>10th Anniversary Edition now available</p>
-                                <span class="update-time">1 week ago</span>
-                            </div>
-                        </div>
-                        
-                        <div class="social-follow">
-                            <h4>Stay Connected</h4>
-                            <div class="social-buttons">
-                                <a href="https://instagram.com/therealmartone" class="social-btn instagram">
-                                    <i class="fab fa-instagram"></i>
-                                </a>
-                                <a href="#" class="social-btn twitter">
-                                    <i class="fab fa-twitter"></i>
-                                </a>
-                                <a href="#" class="social-btn facebook">
-                                    <i class="fab fa-facebook"></i>
-                                </a>
-                                <a href="#" class="social-btn youtube">
-                                    <i class="fab fa-youtube"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Stats Section -->
-    <section class="stats-section py-5">
-        <div class="container">
-            <div class="row g-4">
-                <div class="col-md-3">
-                    <div class="stat-item text-center">
-                        <div class="stat-icon">
-                            <i class="fas fa-music"></i>
-                        </div>
-                        <div class="stat-number" data-target="50">0</div>
-                        <div class="stat-label">Tracks Released</div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="stat-item text-center">
-                        <div class="stat-icon">
-                            <i class="fas fa-book"></i>
-                        </div>
-                        <div class="stat-number" data-target="3">0</div>
-                        <div class="stat-label">Books Published</div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="stat-item text-center">
-                        <div class="stat-icon">
-                            <i class="fas fa-users"></i>
-                        </div>
-                        <div class="stat-number" data-target="500">0</div>
-                        <div class="stat-label">K+ Followers</div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="stat-item text-center">
-                        <div class="stat-icon">
-                            <i class="fas fa-trophy"></i>
-                        </div>
-                        <div class="stat-number" data-target="5">0</div>
-                        <div class="stat-label">Awards & Nominations</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Newsletter Section -->
-    <section class="newsletter-section py-5">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-8 text-center">
-                    <div class="newsletter-content">
-                        <h2 class="newsletter-title">Stay Connected</h2>
-                        <p class="newsletter-subtitle">Subscribe to receive the latest updates, exclusive content, and announcements from Martone</p>
-                        
-                        <form class="newsletter-form" id="newsletterForm">
-                            <div class="input-group">
-                                <input type="email" class="form-control" placeholder="Enter your email address" required>
-                                <button class="btn btn-primary" type="submit">
-                                    <i class="fas fa-paper-plane"></i>
-                                    Subscribe
-                                </button>
-                            </div>
-                        </form>
-                        
-                        <p class="newsletter-disclaimer">
-                            By subscribing, you agree to receive updates and promotional content. Unsubscribe at any time.
-                        </p>
                     </div>
                 </div>
             </div>
@@ -420,14 +181,13 @@
                     <div class="footer-brand">
                         <h3 class="footer-logo">MARTONE</h3>
                         <p class="footer-description">
-                            The Emperor of House Music, accomplished author, former TV show host, and radio personality. 
-                            Creating exceptional music and literary works that inspire and entertain.
+                            The Emperor of House Music, accomplished author, former TV show host, and radio personality.
                         </p>
                     </div>
                 </div>
                 
                 <div class="col-lg-2">
-                    <h5 class="footer-title">Quick Links</h5>
+                    <h5 class="footer-title">Menu</h5>
                     <ul class="footer-links">
                         <li><a href="index.html">Home</a></li>
                         <li><a href="biography.html">Biography</a></li>
@@ -437,26 +197,16 @@
                 </div>
                 
                 <div class="col-lg-2">
-                    <h5 class="footer-title">Explore</h5>
+                    <h5 class="footer-title">More</h5>
                     <ul class="footer-links">
                         <li><a href="store.html">Store</a></li>
                         <li><a href="tour.html">Tour</a></li>
                         <li><a href="style.html">Style</a></li>
-                        <li><a href="blog.html">Blog</a></li>
-                    </ul>
-                </div>
-                
-                <div class="col-lg-2">
-                    <h5 class="footer-title">Connect</h5>
-                    <ul class="footer-links">
                         <li><a href="subscribe.html">Subscribe</a></li>
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="#">Support</a></li>
-                        <li><a href="#">Privacy</a></li>
                     </ul>
                 </div>
                 
-                <div class="col-lg-2">
+                <div class="col-lg-4">
                     <h5 class="footer-title">Follow</h5>
                     <div class="footer-social">
                         <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
@@ -469,30 +219,19 @@
             
             <div class="footer-bottom">
                 <div class="row align-items-center">
-                    <div class="col-md-6">
+                    <div class="col-md-12 text-center">
                         <p class="copyright">
-                            &copy; 2025 Martone. All rights reserved. Martone™ is a registered trademark.
+                            &copy; 2025 Martone. All rights reserved.
                         </p>
-                    </div>
-                    <div class="col-md-6 text-md-end">
-                        <div class="footer-meta">
-                            <span>Designed with ❤️ for music lovers</span>
-                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
 
-    <!-- Back to Top Button -->
-    <button class="back-to-top" id="backToTop">
-        <i class="fas fa-chevron-up"></i>
-    </button>
-
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="assets/js/main.js"></script>
-    <script src="assets/js/animations.js"></script>
 </body>
 </html>

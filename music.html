@@ -1,210 +1,1032 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Music - Martone</title>
-    <meta name="description" content="Explore Martone's complete music catalog featuring house music masterpieces, albums, and exclusive tracks.">
-    
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="assets/css/main.css">
-</head>
-<body>
-    <!-- Header -->
-    <nav class="navbar navbar-expand-lg fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">
-                <span class="brand-text">MARTONE</span>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Music - Martone | The Emperor of House Music</title>
+        <meta name="description"
+            content="Explore Martone's complete music catalog featuring house music masterpieces, albums, and exclusive tracks.">
+
+        <!-- Bootstrap CSS -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+            rel="stylesheet">
+        <!-- Font Awesome -->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <!-- Google Fonts -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet">
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="assets/css/main.css">
+    </head>
+    <body>
+        <!-- Loading Screen -->
+        <div id="loading-screen">
+            <div class="loading-content">
+                <div class="loading-logo">MARTONE</div>
+                <div class="loading-spinner"></div>
+            </div>
+        </div>
+
+        <!-- Social Media Sidebar -->
+        <div class="social-sidebar">
+            <a href="#" class="social-link" data-platform="facebook">
+                <i class="fab fa-facebook-f"></i>
             </a>
-            
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="biography.html">Biography</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="music.html">Music</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="press.html">Press</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="store.html">Store</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="tour.html">Tour</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="style.html">Style By Martone</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="subscribe.html">Subscribe</a>
-                    </li>
-                </ul>
-                
-                <!-- Language Selector -->
-                <div class="language-selector ms-3">
-                    <div class="dropdown">
-                        <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown">
-                            <img src="https://flagcdn.com/16x12/us.png" alt="English"> EN
-                        </button>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#"><img src="https://flagcdn.com/16x12/us.png" alt="English"> English</a></li>
-                        </ul>
+            <a href="#" class="social-link" data-platform="twitter">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" class="social-link" data-platform="linkedin">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="#" class="social-link" data-platform="instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <div class="social-more">
+                <i class="fas fa-plus"></i>
+            </div>
+        </div>
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container">
+         <a class="navbar-brand" href="index.html">
+          <span class="brand-text"><a href="index.html"><img alt
+                src="logo.png"></a></span>
+        </a>
+
+                <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"
+                                href="biography.html">Biography</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active"
+                                href="music.html">Music</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="press.html">Press</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="store.html">Store</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="tour.html">Tour</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="style.html">Style By
+                                Martone</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"
+                                href="subscribe.html">Subscribe</a>
+                        </li>
+                    </ul>
+
+                    <!-- Language Selector -->
+                    <div class="language-selector ms-3">
+                        <div class="dropdown">
+                            <button class="btn dropdown-toggle" type="button"
+                                data-bs-toggle="dropdown">
+                                <img src="https://flagcdn.com/16x12/us.png"
+                                    alt="English"> EN
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#"><img
+                                            src="https://flagcdn.com/16x12/us.png"
+                                            alt="English"> English</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </nav>
+        </nav>
 
-    <!-- Banner with Video -->
-    <section class="music-banner">
-        <div class="banner-video-container">
-            <video class="banner-video" autoplay muted loop playsinline>
-                <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
-            </video>
-            <div class="banner-overlay"></div>
-        </div>
-        <div class="banner-content">
+        <!-- Page Header -->
+        <section class="page-header music-header">
+            <div class="container-fluid p-0">
+                <div class="banner-wrapper text-center">
+                    <img
+                        src="https://martoneonline.com/wp-content/uploads/2025/02/cropped-TEOM-2.12.25-1600-x-560-px-png.avif"
+                        alt="Martone Banner" class="img-fluid">
+                </div>
+            </div>
+        </section>
+
+        <style>
+.banner-wrapper img {
+  width: 100%;      /* makes it responsive to container width */
+  height: auto;     /* keeps original aspect ratio */
+  display: block;   /* removes unwanted space below image */
+}
+</style>
+        <!-- Music Section -->
+        <section class="music-section">
+            <div class="container">
+                <!-- Section Heading -->
+                <div class="row">
+                    <div class="col-12 text-center mb-4">
+                        <h2 class="section-title mt-4">Music</h2>
+                    </div>
+                </div>
+
+                <div class="row align-items-start g-4">
+                    <!-- Left Column -->
+                    <div class="col-lg-6">
+                        <img src="assets/images/coloumn-image.avif"
+                            class="img-fluid rounded shadow mb-3"
+                            alt="Left Column Image">
+                        <p class="text-justify">
+                            <b>Celebrate 10 Years of Evolution — TEOM:</b> The
+                            Evolution of Martone (10th Anniversary Edition)
+                            <br><br>
+                            In honor of a decade in the game, The Emperor of
+                            House Music — Martone — returns with a bold
+                            reimagining of his breakout album, The Evolution of
+                            Martone. The 10th Anniversary Edition is more than
+                            just a remix project — it’s a celebration of
+                            artistry, growth, and house music history.
+                            <br><br>
+                            Featuring fresh, deep house remixes crafted by
+                            Marvin DJ Extreme Detroit Hairston, Michael E.
+                            Williams II, Jordan 40 Plus Ford, and Martone
+                            himself, this special edition breathes new life into
+                            the original 2015 release. With reworked beats,
+                            unreleased lyrics, and modern production, this
+                            version is both a love letter to the past and a vibe
+                            for the future.
+                            <br><br>
+                            Whether you’re a longtime fan or discovering the
+                            energy for the first time, TEOM: The Evolution of
+                            Martone – 10th Anniversary Edition is made to move
+                            you — body and soul.
+                        </p>
+                    </div>
+
+                    <!-- Right Column -->
+                    <div class="col-lg-6">
+                        <div class="row g-3 mb-3">
+                            <div class="col-6">
+                                <!-- First YouTube Video -->
+                                <div class="ratio ratio-16x9 video-border">
+                                    <iframe class="elementor-video"
+                                        frameborder="0" allowfullscreen
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        src="https://www.youtube.com/embed/hMNCoo1cTLA?controls=1&rel=0&playsinline=1&cc_load_policy=0&autoplay=1&mute=1&loop=1">
+                                    </iframe>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <!-- Second YouTube Video -->
+                                <div class="ratio ratio-16x9 video-border">
+                                    <iframe class="elementor-video"
+                                        frameborder="0" allowfullscreen
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        src="https://www.youtube.com/embed/qulLdJInugQ?controls=1&rel=0&playsinline=1&cc_load_policy=0&autoplay=1&mute=1&loop=1">
+                                    </iframe>
+                                </div>
+                            </div>
+                        </div>
+
+                        <p class="text-justify">
+                            <b>Martone’s “Chocolate (The Drumapella Mix)”
+                                Sizzles at #14 on the UK Top 20 Dance Charts</b>
+                            <br><br>
+                            The Emperor of House Music is back on the charts —
+                            and this time, he’s bringing the heat.
+                            “Chocolate (The Drumapella Mix),” remixed by Martone
+                            and produced by Michael E. Williams, II
+                            of Platinum Keyz Recordings, has officially climbed
+                            to #14 on the UK Top 20 Dance Charts,
+                            proving once again that Martone’s sound is global
+                            and unstoppable.
+                            <br><br>
+                            This stripped-down, beat-driven version of the
+                            fan-favorite track from
+                            <i>The Evolution of Martone – 10th Anniversary
+                                Edition</i> showcases Martone’s raw creativity
+                            and deep roots in house music. By centering the
+                            rhythm and layering it with rich, percussive
+                            elements, Martone transforms “Chocolate” into a
+                            pulse-pounding experience designed for the
+                            dancefloor.
+                            <br><br>
+                            The chart success in the UK is a major milestone —
+                            not just for the anniversary edition, but
+                            for Martone’s continued rise as a force in
+                            international house music.
+                            <br><br>
+                            With “Chocolate (The Drumapella Mix),” Martone isn’t
+                            just serving a track — he’s serving a vibe.
+                            And the world is eating it up.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="spotify-section py-3">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-8 mx-auto text-center">
-                        <h1 class="page-title">Music</h1>
-                        <p class="page-subtitle">The Sound of The Emperor</p>
+                    <div class="col-12 text-center mb-4">
+                        <h2 class="section-title">Featured Albums</h2>
+                    </div>
+                </div>
+                <div class="row align-items-center g-4">
+
+                    <!-- Left Column (Album Embed) -->
+                    <div class="col-lg-6">
+                        <iframe style="border-radius:12px; max-width:100%;"
+                            src="https://open.spotify.com/embed/album/1id1DW5dhAHvg8PH1dN9yl?utm_source=generator"
+                            width="100%" height="352" frameborder="0"
+                            allowfullscreen
+                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                            loading="lazy">
+                        </iframe>
+                    </div>
+
+                    <!-- Right Column (Track Embed) -->
+                    <div class="col-lg-6">
+                        <iframe style="border-radius:12px; max-width:100%;"
+                            src="https://open.spotify.com/embed/track/27IjYqxlwFesPuLutmjmVj?utm_source=generator"
+                            width="100%" height="152" frameborder="0"
+                            allowfullscreen
+                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                            loading="lazy">
+                        </iframe>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+<!-- New Album Section -->
+   <section class="new-albums">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <h2 class="section-title">New Albums</h2>
+                <p class="section-subtitle">Explore Martone's latest creations</p>
+            </div>
+
+            <!-- Album 1 -->
+            <div class="album-card">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <div class="album-image">
+                            <img src="https://martoneonline.com/wp-content/uploads/2024/09/WERK-THAT-ALBUM-COVER-MARTONE-2025-300x300.png" 
+                                 alt="Werk That Album Cover">
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="album-content">
+                            <h3 class="album-title">Werk That (Extreme's Deep Werk Out Mix)</h3>
+                            <div class="album-description">
+                                <p>Get ready for the ultimate house music experience! Martone's Werk That (Extreme's Deep Werk Out Mix), produced by the incredible DJ Extreme Detroit, is making its grand return with a re-release that's bound to set the dance floors on fire...</p>
+                                <div class="read-more-content">
+                                    <p>🔥 This powerful remix takes Werk That to new depths, blending pulsating beats and irresistible grooves that will keep you moving all night long. Whether you're a longtime fan of Martone or discovering his signature sound for the first time, this track promises to deliver a fresh energy that celebrates the best of house music. Prepare to stream Werk That (Extreme's Deep Werk Out Mix) on all major platforms—coming soon! Stay tuned for updates and make sure to follow Martone for more releases and exclusive content. Let's werk it out! 🎶👑</p>
+                                </div>
+                                <button class="read-more-btn"><i class="fas fa-chevron-down"></i> Read More</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- Intro Text -->
-    <section class="music-intro py-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 mx-auto text-center">
-                    <h2>The Evolution of House Music</h2>
-                    <p class="lead">Experience the musical journey of Martone, The Emperor of House Music. From chart-topping hits to underground masterpieces, explore a catalog that has defined and redefined electronic dance music for over a decade.</p>
-                    <p>With tracks reaching #5 on iTunes charts and climbing UK Electronic Dance Charts, Martone's music continues to captivate audiences worldwide, blending traditional house elements with innovative sounds that push the boundaries of the genre.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Spotify Embed Music -->
-    <section class="spotify-section py-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 text-center mb-5">
-                    <h2 class="section-title">Featured Tracks</h2>
-                </div>
-            </div>
-            <div class="row g-4">
-                <div class="col-lg-6">
-                    <iframe src="https://open.spotify.com/embed/artist/4ShY6QfS1VPi5blSoosaC3" width="100%" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-                </div>
-                <div class="col-lg-6">
-                    <iframe src="https://open.spotify.com/embed/track/4ShY6QfS1VPi5blSoosaC3" width="100%" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Image with Text (Apple Music Link) -->
-    <section class="apple-music-section py-5">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=600&h=400&fit=crop&q=80" alt="Martone Apple Music" class="img-fluid rounded">
-                </div>
-                <div class="col-lg-6">
-                    <div class="apple-music-content">
-                        <h3>Stream on Apple Music</h3>
-                        <p>Experience Martone's complete discography in high-quality audio on Apple Music. From the latest releases to classic tracks, enjoy the full Emperor experience with spatial audio and lossless quality.</p>
-                        <p>Discover exclusive content, behind-the-scenes insights, and early access to new releases. Join millions of fans streaming Martone's music on Apple's premium platform.</p>
-                        <a href="https://music.apple.com/us/artist/martone/1127153006" target="_blank" class="btn btn-primary btn-lg">
-                            <i class="fab fa-apple me-2"></i>
-                            Listen on Apple Music
-                        </a>
+            <!-- Album 2 -->
+            <div class="album-card">
+                <div class="row g-0">
+                    <div class="col-md-4 order-md-2">
+                        <div class="album-image">
+                            <img src="https://martoneonline.com/wp-content/uploads/2024/09/Groove-Tonight-Remixes-300x300.webp" 
+                                 alt="Groove Tonight Remixes">
+                        </div>
+                    </div>
+                    <div class="col-md-8 order-md-1">
+                        <div class="album-content">
+                            <h3 class="album-title">Groove Tonight Remixes</h3>
+                            <div class="album-description">
+                                <p>New Re-Release Alert! 🚨 Martone, known as "The Emperor of House Music," is excited to announce the re-release of "Groove Tonight Remixes" from his critically acclaimed album The Evolution of Martone! 🎧✨ This collection features four dynamic remixes...</p>
+                                <div class="read-more-content">
+                                    <p>🔥 The Emperor's Mix by Martone (Dubstep Trap Category) – A high-energy blend of dubstep and trap, taking listeners on an unparalleled sonic journey. 💪 DJ Extreme's Late Night 7-Inch Edit Remix (Fitness and Workout - Deep House Category) – Perfect for late-night workout sessions, delivering deep house vibes that keep the motivation high! ⚡ Sensation Remix (Fitness and Workout - Hard Dance Category) – An electrifying hard dance track designed to power up any fitness routine! 🔊 Turnt Up Remix by Michael E. Williams, II (Dubstep UK Funky Category) – This remix elevates "Groove Tonight" with a unique fusion of Dubstep and UK Funky beats, keeping the party going all night long! The striking cover art captures Martone's fiery passion and dynamic energy, perfectly reflecting the spirit of these remixes. 🔥🎶</p>
+                                </div>
+                                <button class="read-more-btn"><i class="fas fa-chevron-down"></i> Read More</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="row g-4">
-                <div class="col-lg-4">
-                    <div class="footer-brand">
-                        <h3 class="footer-logo">MARTONE</h3>
-                        <p class="footer-description">
-                            The Emperor of House Music, accomplished author, former TV show host, and radio personality.
-                        </p>
+            <!-- Album 3 -->
+            <div class="album-card">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <div class="album-image">
+                            <img src="https://martoneonline.com/wp-content/uploads/2024/09/I-Give-My-Heart-to-You--300x300.webp" 
+                                 alt="I Give My Heart To You">
+                        </div>
                     </div>
-                </div>
-                
-                <div class="col-lg-2">
-                    <h5 class="footer-title">Menu</h5>
-                    <ul class="footer-links">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="biography.html">Biography</a></li>
-                        <li><a href="music.html">Music</a></li>
-                        <li><a href="press.html">Press</a></li>
-                    </ul>
-                </div>
-                
-                <div class="col-lg-2">
-                    <h5 class="footer-title">More</h5>
-                    <ul class="footer-links">
-                        <li><a href="store.html">Store</a></li>
-                        <li><a href="tour.html">Tour</a></li>
-                        <li><a href="style.html">Style</a></li>
-                        <li><a href="subscribe.html">Subscribe</a></li>
-                    </ul>
-                </div>
-                
-                <div class="col-lg-4">
-                    <h5 class="footer-title">Follow</h5>
-                    <div class="footer-social">
-                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <div class="col-md-8">
+                        <div class="album-content">
+                            <h3 class="album-title">I Give My Heart to You</h3>
+                            <div class="album-description">
+                                <p>🌟 "I Give My Heart to You" - Re-Release from the Erogenous Zone Album! 🌟 Martone is bringing back the groove with the re-release of his classic disco ballad, "I Give My Heart to You," from the iconic Erogenous Zone album! This track takes you on a journey through the emotional landscape of love...</p>
+                                <div class="read-more-content">
+                                    <p>Wrapped in the infectious rhythms of disco that defined an era. With its unforgettable blend of soulful lyrics and danceable beats, "I Give My Heart to You" is a timeless anthem that captures the essence of love's highs and lows. Whether you're reminiscing about past loves or dancing through your current one, this song will make you feel every emotion as if it were brand new. 🎶 Revisit the magic of Erogenous Zone with this re-release, and let the music move you all over again. Martone's smooth vocals and powerful delivery will remind you why this track has remained a fan favorite. 📸 The cover art, with its warm tones and introspective vibe, perfectly captures the passion and soul of the song. Martone's thoughtful expression invites you into the depth of the music, making this re-release a must-listen. 🔥</p>
+                                </div>
+                                <button class="read-more-btn"><i class="fas fa-chevron-down"></i> Read More</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+
+            <!-- Album 4 -->
+            <div class="album-card">
+                <div class="row g-0">
+                    <div class="col-md-4 order-md-2">
+                        <div class="album-image">
+                            <img src="https://martoneonline.com/wp-content/uploads/2024/08/The-Evolution-of-Martone-Deluxe-Edition-Album-Cover-A-300x300.webp" 
+                                 alt="The Evolution of Martone Deluxe Edition">
+                        </div>
+                    </div>
+                    <div class="col-md-8 order-md-1">
+                        <div class="album-content">
+                            <h3 class="album-title">The Evolution of Martone: Deluxe Edition</h3>
+                            <div class="album-description">
+                                <p>The Evolution of Martone: Deluxe Edition is a celebration of growth, artistry, and the musical journey of Martone. Originally released to critical acclaim, this album showcases the dynamic range and versatility of Martone as an artist...</p>
+                                <div class="read-more-content">
+                                    <p>Blending elements of dance, R&B, and pop to create a sound that's both unique and timeless. Featuring standout tracks like "Love You I Do Auoo (Extreme's Deep Love Remix)," which soared to #5 on the iTunes Fitness and Workout charts, and "Groove Tonight," a hit that reached #1 on iTunes, The Evolution of Martone has solidified its place in the hearts of fans and on the dance floor. Released on July 15, 2016, this deluxe edition brings a fresh perspective to these beloved tracks with new remixes that infuse each song with renewed energy and passion. The album isn't just a collection of songs; it's a narrative of evolution and transformation, capturing Martone's journey as an artist who continues to push boundaries and redefine music. With new artwork and remixes, this re-release invites listeners to experience the album in a whole new way.</p>
+                                </div>
+                                <button class="read-more-btn"><i class="fas fa-chevron-down"></i> Read More</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Album 5 -->
+            <div class="album-card">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <div class="album-image">
+                            <img src="https://martoneonline.com/wp-content/uploads/2024/08/Rippin-the-Runway-Album-Cover-1-300x300.png" 
+                                 alt="Rippin the Runway">
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="album-content">
+                            <h3 class="album-title">Rippin' the Runway Remix</h3>
+                            <div class="album-description">
+                                <p>Rippin' the Runway Remix by Martone is a high-energy track originally released on September 2, 2016, perfectly timed for Fashion Week in NYC. This song captures the essence of the runway with its pulsating beats and dynamic rhythm...</p>
+                                <div class="read-more-content">
+                                    <p>Embodying the spirit of fashion, flair, and fearless expression. Designed to be a soundtrack for models strutting down the catwalk, the remix elevates the original with even bolder beats and a modern twist that makes it irresistible. From the moment the bass drops, "Rippin' the Runway Remix" pulls listeners into a world of high fashion and excitement, delivering a vibrant experience that reflects Martone's signature style. The track combines elements of dance and electronic music, making it a favorite in both fashion shows and dance clubs. With its infectious energy and stylish groove, Rippin' the Runway Remix is more than just a song—it's an anthem for all who love the spotlight and live to express themselves boldly.</p>
+                                </div>
+                                <button class="read-more-btn"><i class="fas fa-chevron-down"></i> Read More</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Album 6 -->
+            <div class="album-card">
+                <div class="row g-0">
+                    <div class="col-md-4 order-md-2">
+                        <div class="album-image">
+                            <img src="https://martoneonline.com/wp-content/uploads/2024/08/Fuck-Me-Baby-2025-Album-Cover-Martone-1-300x300.webp" 
+                                 alt="Fuck Me Baby">
+                        </div>
+                    </div>
+                    <div class="col-md-8 order-md-1">
+                        <div class="album-content">
+                            <h3 class="album-title">Fuck Me Baby</h3>
+                            <div class="album-description">
+                                <p>Get ready to turn up the heat with the re-release of Fuck Me Baby by Martone, originally released on April 18, 2017. This bold and unapologetic track pushes the boundaries of sensuality and self-expression...</p>
+                                <div class="read-more-content">
+                                    <p>Capturing Martone's signature style of blending provocative lyrics with infectious beats. From its sultry basslines to its electrifying rhythms, "Fuck Me Baby" is a daring anthem that celebrates freedom, confidence, and the power of desire. The re-release of this track comes with a fresh perspective and new energy, inviting both old fans and new listeners to experience the raw emotion and allure that Martone brings to his music. Known for challenging the norms and creating music that makes a statement, Martone takes this track to new heights, ensuring it remains a staple on playlists and in the clubs. Perfect for those who embrace their bold side, Fuck Me Baby is more than just a song—it's a declaration of independence and a call to embrace one's own desires without hesitation.</p>
+                                </div>
+                                <button class="read-more-btn"><i class="fas fa-chevron-down"></i> Read More</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Album 7 -->
+            <div class="album-card">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <div class="album-image">
+                            <img src="https://martoneonline.com/wp-content/uploads/2024/08/Fever-Extremes-Deep-Fever-Remix-A1-300x300.webp" 
+                                 alt="Fever Extreme Remix">
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="album-content">
+                            <h3 class="album-title">Fever (Extreme's Deep Fever Remix)</h3>
+                            <div class="album-description">
+                                <p>Fever (Extreme's Deep Fever Remix) by Martone is a captivating track that seamlessly blends passion, rhythm, and energy. This remix takes the original song to a new level with its infectious beats and deep, resonant basslines...</p>
+                                <div class="read-more-content">
+                                    <p>Making it an instant favorite for dance floors and music enthusiasts alike. Martone's ability to fuse elements of dance, electronic, and pop music is evident in this remix, showcasing his versatility and knack for creating unforgettable tracks. The remix, produced by DJ Extreme, injects a fresh, vibrant energy into the song, amplifying its sensual undertones and driving rhythms. It's a track that doesn't just make you want to dance—it compels you to move, with every beat pulsing like a heartbeat. The hypnotic groove of "Fever" captures the essence of late-night dance parties, where the music takes over and everything else fades away. Martone's powerful vocals and dynamic presence shine through, adding depth and intensity to the already pulsating rhythm.</p>
+                                </div>
+                                <button class="read-more-btn"><i class="fas fa-chevron-down"></i> Read More</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Album 8 -->
+            <div class="album-card">
+                <div class="row g-0">
+                    <div class="col-md-4 order-md-2">
+                        <div class="album-image">
+                            <img src="https://martoneonline.com/wp-content/uploads/2024/08/Love-Out-Loud-Album-Cover-Martone-1-300x300.webp" 
+                                 alt="Love Out Loud">
+                        </div>
+                    </div>
+                    <div class="col-md-8 order-md-1">
+                        <div class="album-content">
+                            <h3 class="album-title">Love Out Loud (Remixes)</h3>
+                            <div class="album-description">
+                                <p>Love Out Loud (Remixes) by Martone, originally released on May 31, 2019, is a powerful celebration of love, pride, and self-expression. This collection features a range of remixes that highlight Martone's dynamic sound...</p>
+                                <div class="read-more-content">
+                                    <p>And his commitment to creating music that resonates with diverse audiences. The Pride Season Remix is a standout, capturing the spirit of unity and joy that defines Pride celebrations around the world. Its infectious energy and uplifting beats make it a perfect anthem for anyone looking to dance and celebrate love in all its forms. The Radio Edit and Bass Radio Edit offer versatile versions of the track, each with its unique vibe. The Radio Edit delivers a crisp, polished sound perfect for mainstream airplay, while the Bass Radio Edit cranks up the low-end frequencies, giving it a deeper, more resonant feel that's ideal for club settings. Adding a fresh twist to the collection is the new remix by DJ Extreme Detroit, which infuses the song with a modern, edgy sound.</p>
+                                </div>
+                                <button class="read-more-btn"><i class="fas fa-chevron-down"></i> Read More</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+<style>
+/* Base Styles */
+.new-albums.dark-theme {
+    background-color: #121212;
+    color: #e0e0e0;
+    padding: 4rem 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+
+
+/* Album Grid */
+.album-grid {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Album Card */
+.album-card {
+    display: flex;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.album-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+}
+
+.album-card.reverse {
+    flex-direction: row-reverse;
+}
+
+/* Album Image */
+.album-image {
+    flex: 0 0 40%;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.album-image img {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 8px;
+    border: 2px solid #D4AF37 !important;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+}
+
+.album-card:hover .album-image img {
+    transform: scale(1.03);
+}
+
+/* Album Content */
+.album-content {
+    flex: 0 0 60%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.album-title {
+    color: #D4AF37;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+.album-description {
+    line-height: 1.6;
+}
+
+.album-description p {
+    margin-bottom: 1.5rem;
+}
+
+.read-more-content {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.read-more-content.active {
+    display: block;
+    opacity: 1;
+}
+
+/* Read More Button */
+.read-more-btn {
+    background: transparent;
+    color: #D4AF37;
+    border: 1px solid #D4AF37;
+    padding: 0.5rem 1.5rem;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    margin-top: 1rem;
+}
+
+.read-more-btn:hover {
+    background: #D4AF37;
+    color: #121212;
+}
+
+.read-more-btn.active {
+    background: #D4AF37;
+    color: #121212;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .album-card {
+        flex-direction: column;
+    }
+    
+    .album-card.reverse {
+        flex-direction: column;
+    }
+    
+    .album-image, .album-content {
+        flex: 1 1 100%;
+    }
+    
+    .album-image {
+        padding-bottom: 0;
+    }
+    
+    .album-image img {
+        max-width: 280px;
+    }
+}
+
+@media (max-width: 576px) {
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .album-title {
+        font-size: 1.5rem;
+    }
+    
+    .album-content {
+        padding: 1.5rem;
+    }
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Read more functionality
+    const readMoreBtns = document.querySelectorAll('.read-more-btn');
+    
+    readMoreBtns.forEach(btn => {
+        btn.addEventListener('click', function() {
+            const content = this.previousElementSibling;
+            this.classList.toggle('active');
             
-            <div class="footer-bottom">
-                <div class="row align-items-center">
-                    <div class="col-md-12 text-center">
-                        <p class="copyright">
-                            &copy; 2025 Martone. All rights reserved.
+            if (content.classList.contains('active')) {
+                content.classList.remove('active');
+                this.textContent = 'Read More';
+            } else {
+                content.classList.add('active');
+                this.textContent = 'Read Less';
+            }
+        });
+    });
+});
+</script>
+
+        <section class="rerelease-section">
+            <div class="container">
+                <!-- Section Heading -->
+                <div class="row">
+                    <div class="col-12 text-center mb-2">
+                        <h2 class="section-title">Re-Releases Now
+                            Available:</h2>
+                    </div>
+                </div>
+
+                <!-- Content Row -->
+                <div class="row">
+                    <div class="col-12">
+                        <ul class="rerelease-list">
+                            <p class="rerelease-note mt-4">
+                                Martone, The Emperor of House Music, is thrilled
+                                to announce the re-release of some of his most
+                                iconic works, each featuring stunning new
+                                artwork that breathes fresh life into these
+                                classic tracks.
+                            </p>
+                            <li><b>The Evolution of Martone: Deluxe Edition</b>
+                                invites listeners to experience the progression
+                                of his unique sound, showcasing a musical
+                                journey like no other.</li>
+                            <li><b>Rippin’ the Runway</b> continues to deliver
+                                electrifying beats that are perfect for hitting
+                                the catwalk with confidence.</li>
+                            <li><b>Fuck Me Baby</b> returns with its sultry,
+                                provocative vibes, setting the mood with
+                                Martone’s signature style.</li>
+                            <li><b>Fever</b> (now with new artwork) brings back
+                                its infectious rhythms, remixed and recharged to
+                                keep you moving.</li>
+                            <li><b>Love Out Loud</b> remains an empowering
+                                anthem, re-released to inspire and uplift, just
+                                as it did before.</li>
+                            <li><b>Groove Tonight</b> remixes are also back,
+                                offering an irresistible blend of beats and
+                                grooves that will keep the dance floor
+                                alive.</li>
+                            <li><b>I Give My Heart to You</b> is making a
+                                heartfelt return, with its powerful lyrics and
+                                soulful melodies that resonate deeply.</li>
+                        </ul>
+
+                        <p class="rerelease-note mt-4">
+                            In addition to revisiting these timeless tracks,
+                            Martone is also gearing up for something new.
+                            A brand-new album is in the works and is set to drop
+                            in the late second quarter of 2025.
+                            <b>Stay tuned for more details on this exciting
+                                upcoming release!</b>
                         </p>
                     </div>
                 </div>
             </div>
-        </div>
-    </footer>
+        </section>
 
-    <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="assets/js/main.js"></script>
-</body>
+        <!-- Intellectual Property Notice Section -->
+        <section class="ip-trademark py-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h4 class="ip-title"><b>Intellectual Property &
+                                Trademark Notice</b></h4>
+                        <p class="rerelease-note mt-3">
+                            All music, lyrics, performance content, and branding
+                            are the intellectual property of Martone Inc.
+                            <strong>Martone™</strong> and <strong>The Emperor of
+                                House Music™</strong> are legally claimed
+                            trademarks
+                            used in entertainment, digital distribution, and
+                            media.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+
+    <!-- Horizontal Image Carousel -->
+    <section class="image-carousel-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center mb-4">
+            <h2 class="section-title" data-animation="fadeInUp">Martone in Motion</h2>
+            <p class="section-subtitle">A glimpse into the artistry and performances</p>
+          </div>
+        </div>
+
+        <div id="imageCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <!-- First Slide -->
+            <div class="carousel-item active">
+              <div class="row g-3">
+                <div class="col-md-3 col-6">
+                  <img
+                    src="https://martoneonline.com/wp-content/uploads/2025/01/Phoenix-Rising-Official-Album-Cover-1024x1024.avif"
+                    class="img-fluid rounded shadow" alt="Phoenix Rising">
+                </div>
+                <div class="col-md-3 col-6">
+                  <img src="https://martoneonline.com/wp-content/uploads/2024/08/Fever-Extremes-Deep-Fever-Remix-A1.png"
+                    class="img-fluid rounded shadow" alt="Fever Extremes Remix">
+                </div>
+                <div class="col-md-3 col-6">
+                  <img src="https://martoneonline.com/wp-content/uploads/2024/09/Groove-Tonight-Remixes.png"
+                    class="img-fluid rounded shadow" alt="Groove Tonight Remixes">
+                </div>
+                <div class="col-md-3 col-6">
+                  <img src="https://martoneonline.com/wp-content/uploads/2024/09/I-Give-My-Heart-to-You--1024x1024.png"
+                    class="img-fluid rounded shadow" alt="I Give My Heart To You">
+                </div>
+              </div>
+            </div>
+
+            <!-- Second Slide -->
+            <div class="carousel-item">
+              <div class="row g-3">
+                <div class="col-md-3 col-6">
+                  <img
+                    src="https://martoneonline.com/wp-content/uploads/2024/09/All-Through-the-Night-Remixes-Cover-1024x1024.webp"
+                    class="img-fluid rounded shadow" alt="All Through the Night Remixes">
+                </div>
+                <div class="col-md-3 col-6">
+                  <img
+                    src="https://martoneonline.com/wp-content/uploads/2024/09/Martones-House-Workout-Essentials-3000-x-3000-px-1024x1024.webp"
+                    class="img-fluid rounded shadow" alt="House Workout Essentials">
+                </div>
+                <div class="col-md-3 col-6">
+                  <img
+                    src="https://martoneonline.com/wp-content/uploads/2024/09/WERK-THAT-ALBUM-COVER-MARTONE-2025-1024x1024.png"
+                    class="img-fluid rounded shadow" alt="Werk That Album">
+                </div>
+                <div class="col-md-3 col-6">
+                  <img
+                    src="https://martoneonline.com/wp-content/uploads/2024/08/Fuck-Me-Baby-2025-Album-Cover-Martone-1.webp"
+                    class="img-fluid rounded shadow" alt="Fuck Me Baby 2025">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Carousel Controls -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#imageCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#imageCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Promo Bar Section (moved below carousel) -->
+    <section class="promo-bar">
+      <div class="promo-content">
+        <a href="https://martoneonline.com/2025/08/06/martone-2025-book-releases/">Unfiltered Truth: Two Must-Read Fall
+          2025 Books</a>
+        <a href="https://martoneonline.com/2025/07/16/usage-of-martone-likeness-rights-2025/">2025 Usage Guidelines:
+          Martone’s Image, Likeness, and Brand Identity</a>
+        <a href="https://martoneonline.com/2025/06/27/ekstase-by-martone-2025/">5 Reasons “EKSTASÉ” Is the Erotic Pop
+          Single 2025 Didn’t See Coming</a>
+        <a href="https://martoneonline.com/2025/06/24/martone-album-of-the-year-jma-2025/">10 Years in the Making:
+          Martone Scores Josie Music Awards Nomination</a>
+        <a href="https://martoneonline.com/2025/05/19/martone-on-reclaiming-my-power/">Martone’s Journey: Reclaiming
+          Power, Legacy & Creativity Through Music and Resilience</a>
+      </div>
+    </section>
+
+    <!-- Footer Bottom -->
+    
+<section class="quicklink-bar">
+            <div class="container" id="customised-footer">
+                <div class="row g-4">
+                    <div class="col-lg-4">
+                        <div class="footer-brand">
+                            <h3 class="footer-logo">MARTONE</h3>
+                            <p class="footer-description">
+                                The Emperor of House Music, accomplished author,
+                                former TV show host, and radio personality.
+                                Creating exceptional music and literary works
+                                that inspire and entertain.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2">
+                        <h5 class="footer-title">Quick Links</h5>
+                        <ul class="footer-links">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="biography.html">Biography</a></li>
+                            <li><a href="music.html">Music</a></li>
+                            <li><a href="press.html">Press</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-2">
+                        <h5 class="footer-title">Explore</h5>
+                        <ul class="footer-links">
+                            <li><a href="store.html">Store</a></li>
+                            <li><a href="tour.html">Tour</a></li>
+                            <li><a href="style.html">Style</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-2">
+                        <h5 class="footer-title">Connect</h5>
+                        <ul class="footer-links">
+                            <li><a href="subscribe.html">Subscribe</a></li>                        
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-2">
+                        <h5 class="footer-title">Follow</h5>
+                        <div class="footer-social">
+                        <a target="_blank" class="social-link" href="https://facebook.com/therealmartone">
+                                <i class="fab fa-facebook-f"></i
+                            ></a>
+                            <a target="_blank" href="https://bsky.app/profile/martoneonline.com"class="social-link"
+                                ><i class="fab fa-twitter"></i
+                            ></a>
+                            <a target="_blank" href="https://www.pinterest.com/TheEmperorOfHouseMusic/" class="social-link"
+                                ><i class="fab fa-pinterest"></i
+                            ></a>
+                        </div>
+                    </div>
+                </div>
+
+                 <!-- Footer Bottom -->
+
+            </div>
+     </section>
+  </footer>
+<footer class="footer-section text-white py-4">
+  <div class="container">
+    <div class="row align-items-center text-center text-md-start">
+      
+      <!-- Left Column -->
+      <div class="col-md-6 mb-2 mb-md-0">
+        <p class="mb-0">
+          © 2025 Martone Inc. All rights reserved.
+        </p>
+      </div>
+      
+      <!-- Right Column -->
+      <div class="col-md-6 text-md-end">
+        <p class="mb-0 small">
+          Martone™ and The Emperor of House Music™ are trademarks used in connection with music, books, fashion, 
+          and entertainment services. Unauthorized use is prohibited.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</footer>
+        <!-- Back to Top Button -->
+        <button class="back-to-top" id="backToTop">
+            <i class="fas fa-chevron-up"></i>
+        </button>
+
+        <!-- Scripts -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script
+            src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="assets/js/main.js"></script>
+        <script src="assets/js/animations.js"></script>
+    </body>
 </html>
+
+<style>
+
+/* Banner styling */
+.banner-image {
+  position: relative;
+  height: 100vh; /* full viewport height */
+  background-image: url('https://martoneonline.com/wp-content/uploads/2025/02/cropped-TEOM-2.12.25-1600-x-560-px-png.avif');
+  background-size: contain;   /* Show full banner without cropping */
+  background-position: center;
+  background-repeat: no-repeat; /* Prevent tiling */
+  overflow: hidden;
+}
+
+/* Overlay for dark effect (optional) */
+.banner-image .overlay {
+  position: absolute;
+  inset: 0;
+}
+
+
+/* Justify all text inside music-section */
+.music-section p {
+  text-align: justify;
+}
+
+/* Add border to video containers */
+.video-border {
+  border: 2px solid rgb(212,175,55); /* Change color as needed */
+  border-radius: 6px; /* optional for rounded corners */
+  overflow: hidden;   /* keeps iframe corners neat */
+}
+/* Golden bullet points */
+.rerelease-list {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.rerelease-list li {
+  color: rgb(212,175,55);
+  margin-bottom: 10px;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+/* Extra note paragraph */
+.rerelease-note {
+  color: #fff; /* adjust based on your site theme */
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+/* Promo Bar Base */
+.promo-bar {
+  width: 100%;
+  background: rgb(212,175,55); /* golden background */
+  color: #000;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  padding: 10px 0;
+  margin-top: 20px;
+}
+
+.promo-content {
+  display: inline-block;
+  padding-left: 100%;
+  animation: scroll-left 40s linear infinite;
+}
+
+.promo-content a {
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  margin-right: 50px;
+  transition: color 0.3s ease;
+}
+
+.promo-content a:hover {
+  color: #fff;
+}
+
+@keyframes scroll-left {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-100%); }
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  background: #111;
+  color: #fff;
+  padding-left: 20px;   /* add left padding */
+  padding-right: 20px;  /* add right padding */
+  font-size: 14px;
+  line-height: 1.6;
+}
+</style>

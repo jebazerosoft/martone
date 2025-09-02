@@ -1,237 +1,685 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Martone - The Emperor of House Music</title>
-    <meta name="description" content="Official website of Martone, The Emperor of House Music. Author, former TV show host, and radio personality.">
-    
+    <title>Martone - The Emperor of House Music | Author | Former TV Show
+      Host & Radio Personality</title>
+    <meta name="description"
+      content="Official website of Martone - The Emperor of House Music, Author, Former TV Show Host & Radio Personality. Discover music, books, and exclusive content.">
+
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet">
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/main.css">
-</head>
-<body>
-    <!-- Header -->
+  </head>
+
+  <body>
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+      <div class="loading-content">
+        <div class="loading-logo"><img alt src="logo.png"></div>
+        <div class="loading-spinner"></div>
+      </div>
+    </div>
+
+    <!-- Social Media Sidebar -->
+    <div class="social-sidebar">
+      <a target="_blank" class="social-link"
+        href="https://facebook.com/therealmartone" data-platform="facebook">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a target="_blank" href="https://bsky.app/profile/martoneonline.com"
+        class="social-link" data-platform="twitter">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a target="_blank"
+        href="https://www.pinterest.com/TheEmperorOfHouseMusic/"
+        class="social-link" data-platform="pintrest">
+        <i class="fab fa-pinterest"></i>
+      </a>
+      <div class="social-more">
+        <i class="fas fa-plus"></i>
+      </div>
+    </div>
+
+    <!-- Navigation -->
     <nav class="navbar navbar-expand-lg fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">
-                <span class="brand-text">MARTONE</span>
-            </a>
-            
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="biography.html">Biography</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="music.html">Music</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="press.html">Press</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="store.html">Store</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="tour.html">Tour</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="style.html">Style By Martone</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="subscribe.html">Subscribe</a>
-                    </li>
-                </ul>
-                
-                <!-- Language Selector -->
-                <div class="language-selector ms-3">
-                    <div class="dropdown">
-                        <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown">
-                            <img src="https://flagcdn.com/16x12/us.png" alt="English"> EN
-                        </button>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#"><img src="https://flagcdn.com/16x12/us.png" alt="English"> English</a></li>
-                        </ul>
-                    </div>
-                </div>
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <span class="brand-text"><a href="index.html"><img alt
+                src="logo.png"></a></span>
+        </a>
+
+        <button class="navbar-toggler" type="button"
+          data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active"
+                href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"
+                href="biography.html">Biography</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="music.html">Music</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="press.html">Press</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="store.html">Store</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="tour.html">Tour</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="style.html">Style By
+                Martone</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"
+                href="subscribe.html">Subscribe</a>
+            </li>
+          </ul>
+
+          <!-- Language Selector -->
+          <div class="language-selector ms-3">
+            <div class="dropdown">
+              <button class="btn dropdown-toggle" type="button"
+                data-bs-toggle="dropdown">
+                <img src="https://flagcdn.com/16x12/us.png"
+                  alt="English"> EN
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#"><img
+                      src="https://flagcdn.com/16x12/us.png"
+                      alt="English"> English</a></li>
+              </ul>
             </div>
+          </div>
         </div>
+      </div>
     </nav>
 
-    <!-- Banner with Full Width Video -->
-    <section class="hero-banner">
-        <div class="banner-video-container">
-            <video class="banner-video" autoplay muted loop playsinline>
-                <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
-            </video>
-            <div class="banner-overlay"></div>
+    <!-- Hero Banner Section -->
+    <section class="page-header music-header">
+      <div class="container-fluid p-0">
+        <div class="banner-wrapper text-center">
+          <img
+            src="https://martoneonline.com/wp-content/uploads/2025/02/cropped-The-Emperor-of-House-Music-and-Author-png.avif"
+            alt="Martone Banner" class="img-fluid">
         </div>
-        <div class="banner-content">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-8 mx-auto text-center">
-                        <h1 class="banner-title">MARTONE</h1>
-                        <p class="banner-subtitle">THE EMPEROR OF HOUSE MUSIC</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+      </div>
     </section>
 
-    <!-- Videos & Music Section -->
-    <section class="videos-music-section py-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 text-center mb-5">
-                    <h2 class="section-title">Videos & Music</h2>
-                </div>
+    <!-- Featured Content Section(Home) -->
+    <section class="home-section ">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="row">
+          <div class="col-12">
+            <div class="section-header text-center mt-5 mb-5">
+              <h2 class="section-title">Explore Martone’s featured videos and
+                performances</h2>
             </div>
-            <div class="row g-4">
-                <div class="col-lg-6">
-                    <div class="video-card">
-                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Martone Music Video" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="music-card">
-                        <iframe src="https://open.spotify.com/embed/artist/4ShY6QfS1VPi5blSoosaC3" width="100%" height="315" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
+
+        <!-- YouTube Video Grid -->
+        <div class="row g-4">
+          <!-- Video 1 -->
+          <div class="col-lg-6 col-md-6">
+            <div class="ratio ratio-16x9 video-frame">
+              <iframe
+                src="https://www.youtube.com/embed/igbnAwhTelQ?autoplay=1&mute=1&loop=1&playlist=igbnAwhTelQ&controls=1&rel=0"
+                title="Re-introduction to Martone"
+                allow="autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
+          </div>
+
+          <!-- Video 2 -->
+          <div class="col-lg-6 col-md-6">
+            <div class="ratio ratio-16x9 video-frame">
+              <iframe
+                src="https://www.youtube.com/embed/r1Y-Wq5t1QQ?autoplay=1&mute=1&loop=1&playlist=r1Y-Wq5t1QQ&controls=1&rel=0"
+                title="Martone Video 2"
+                allow="autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
+          </div>
+
+          <!-- Video 3 -->
+          <div class="col-lg-6 col-md-6">
+            <div class="ratio ratio-16x9 video-frame">
+              <iframe
+                src="https://www.youtube.com/embed/9abVuMeeTck?autoplay=1&mute=1&loop=1&playlist=9abVuMeeTck&controls=1&rel=0"
+                title="Martone Video 3"
+                allow="autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
+          </div>
+
+          <!-- Video 4 -->
+          <div class="col-lg-6 col-md-6">
+            <div class="ratio ratio-16x9 video-frame">
+              <iframe
+                src="https://www.youtube.com/embed/B7u4ftzkXcQ?autoplay=1&mute=1&loop=1&playlist=B7u4ftzkXcQ&controls=1&rel=0"
+                title="Martone Video 4"
+                allow="autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
+          </div>
+
+          <!-- Video 5 -->
+          <div class="col-lg-6 col-md-6">
+            <div class="ratio ratio-16x9 video-frame">
+              <iframe
+                src="https://www.youtube.com/embed/FT9B7a4zogw?autoplay=1&mute=1&loop=1&playlist=FT9B7a4zogw&controls=1&rel=0"
+                title="Martone Video 5"
+                allow="autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
+          </div>
+
+          <!-- Video 6 -->
+          <div class="col-lg-6 col-md-6">
+            <div class="ratio ratio-16x9 video-frame">
+              <iframe
+                src="https://www.youtube.com/embed/s4RxZSG0-bo?autoplay=1&mute=1&loop=1&playlist=s4RxZSG0-bo&controls=1&rel=0"
+                title="Martone Video 6"
+                allow="autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
+          </div>
+
+          <!-- Video 7 -->
+          <div class="col-lg-6 col-md-6">
+            <div class="ratio ratio-16x9 video-frame">
+              <iframe
+                src="https://www.youtube.com/embed/e5DGB-V8kWw?autoplay=1&mute=1&loop=1&playlist=e5DGB-V8kWw&controls=1&rel=0"
+                title="Martone Video 7"
+                allow="autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
+          </div>
+
+          <!-- Video 8 -->
+          <div class="col-lg-6 col-md-6">
+            <div class="ratio ratio-16x9 video-frame">
+              <iframe
+                src="https://www.youtube.com/embed/jwi1PUP_Q0s?autoplay=1&mute=1&loop=1&playlist=jwi1PUP_Q0s&controls=1&rel=0"
+                title="Martone Video 8"
+                allow="autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- Images Carousel with Live Sidebar -->
-    <section class="gallery-section py-5">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-9">
-                    <h2 class="section-title text-center mb-4">Gallery</h2>
-                    <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&h=400&fit=crop&q=80" class="d-block w-100" alt="Gallery Image 1">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="https://images.unsplash.com/photo-1518609878373-06d740f60d8b?w=800&h=400&fit=crop&q=80" class="d-block w-100" alt="Gallery Image 2">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="https://images.unsplash.com/photo-1571266028243-c4b51c6ce95f?w=800&h=400&fit=crop&q=80" class="d-block w-100" alt="Gallery Image 3">
-                            </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon"></span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
-                            <span class="carousel-control-next-icon"></span>
-                        </button>
-                    </div>
-                </div>
-                
-                <!-- Live Right Sidebar -->
-                <div class="col-lg-3">
-                    <div class="live-sidebar">
-                        <h3>Live Updates</h3>
-                        <div class="live-item">
-                            <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=60&h=60&fit=crop&q=80" alt="Update">
-                            <div class="live-content">
-                                <p>New music video released!</p>
-                                <span>2 hours ago</span>
-                            </div>
-                        </div>
-                        <div class="live-item">
-                            <img src="https://images.unsplash.com/photo-1518609878373-06d740f60d8b?w=60&h=60&fit=crop&q=80" alt="Update">
-                            <div class="live-content">
-                                <p>Book signing event</p>
-                                <span>1 day ago</span>
-                            </div>
-                        </div>
-                        <div class="live-item">
-                            <img src="https://images.unsplash.com/photo-1571266028243-c4b51c6ce95f?w=60&h=60&fit=crop&q=80" alt="Update">
-                            <div class="live-content">
-                                <p>Studio session complete</p>
-                                <span>3 days ago</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <!-- Custom CSS -->
+    <style>
+  .video-frame iframe {
+    border: 2px solid rgb(212, 175, 55) !important;
+    border-radius: 8px; /* optional: makes it look smoother */
+  }
+</style>
+
+    <!-- Music Availability Section -->
+    <section class="music-availability py-5">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="row">
+          <div class="col-12">
+            <div class="section-header text-center mb-5">
+              <h2 class="section-title">Music Availability</h2>
+              <p class="section-subtitle">Update on My Music Availability and
+                Exciting News</p>
             </div>
+          </div>
         </div>
+
+        <!-- Content Row -->
+        <div class="row align-items-center g-4">
+          <!-- Left Column: Text -->
+          <div class="col-lg-6">
+            <p>
+              Recently, my distribution contract with Label-Worx ended, which
+              led to the removal of my music from
+              platforms like Apple Music, Spotify, and Deezer. Given this
+              situation, I took the opportunity to not only
+              redistribute my music but also refresh the artwork for my singles
+              and albums. I’m excited to share that
+              <strong>The Evolution of Martone: Deluxe Edition</strong>,
+              <strong>Rippin’ the Runway</strong>, <strong>Fever</strong>,
+              <strong>Fuck Me Baby</strong>, and <strong>Love Out Loud</strong>
+              are now available again on various platforms.
+            </p>
+            <p>
+              In even more exciting news, I’m currently working on new music
+              that will be released next year. Since my last
+              project, I’ve written over 100 songs, and I’ll be heading into the
+              studio in December to start recording.
+              I’m also in the process of assembling an amazing team to help
+              bring this new music to life, and I can’t wait
+              to share the magic we create with you.
+            </p>
+            <p>
+              Over the next few months, you’ll notice some changes to my website
+              and social media presence. It’s been five
+              years since my last album, and I have a lot to say. Be sure to
+              follow and subscribe to all of my social media
+              accounts so you stay up to date with everything going on. Your
+              support means the world to me, and I’m looking
+              forward to this next chapter!
+            </p>
+          </div>
+
+          <!-- Right Column: Spotify Embed -->
+          <div class="col-lg-6">
+            <iframe style="border-radius: 12px; max-width: 100%;"
+              src="https://open.spotify.com/embed/artist/4ShY6QfS1VPi5blSoosaC3?utm_source=generator"
+              width="100%" height="352" frameborder="0" allowfullscreen
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Album Artwork Section -->
+    <section class="album-artwork ">
+      <div class="container">
+        <div class="row g-4">
+          <!-- Image 1 -->
+          <div class="col-lg-6 col-md-6 text-center">
+            <img
+              fetchpriority="high"
+              decoding="async"
+              src="https://martoneonline.com/wp-content/uploads/2025/01/Phoenix-Rising-Official-Album-Cover-1024x1024.avif"
+              alt="Phoenix Rising Official Album Cover"
+              class="img-fluid rounded shadow"
+              style="max-width:100%; border: 2px solid rgb(212, 175, 55); border-radius: 12px;" />
+          </div>
+
+          <!-- Image 2 -->
+          <div class="col-lg-6 col-md-6 text-center">
+            <img
+              decoding="async"
+              src="https://martoneonline.com/wp-content/uploads/2024/10/Phoenix-Rising-The-Emperors-Ascension-Release-Meme-1024x1024.webp"
+              alt="Phoenix Rising The Emperor’s Ascension"
+              class="img-fluid rounded shadow"
+              style="max-width:100%; border: 2px solid rgb(212, 175, 55); border-radius: 12px;" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Intellectual Property Notice Section -->
+    <section class="ip-trademark py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h4 class="ip-title"><b>Intellectual Property & Trademark
+                Notice</b></h4>
+            <p class="rerelease-note mt-3">
+              All music, lyrics, performance content, and branding are the
+              intellectual property of Martone Inc.
+              <strong>Martone™</strong> and <strong>The Emperor of House
+                Music™</strong> are legally claimed trademarks
+              used in entertainment, digital distribution, and media.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Content Section -->
+    <section class="featured-section py-2">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="section-header text-center mb-5">
+              <h2 class="section-title">Latest Updates</h2>
+              <p class="section-subtitle">Stay connected with Martone's latest
+                projects and announcements</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row g-4">
+          <!-- Featured Article 1 -->
+          <div class="col-lg-8">
+            <article class="featured-card main-featured">
+              <div class="card-image">
+                <div class="image-placeholder">
+                  <i class="fas fa-shield-alt"></i>
+                </div>
+                <div class="card-overlay"></div>
+              </div>
+              <div class="card-content">
+                <div class="card-meta">
+                  <span class="date">July 16, 2025</span>
+                  <span class="category">Legal</span>
+                </div>
+                <h3 class="card-title">2025 Usage Guidelines: Martone’s Image, Likeness, and Brand Identity
+                </h3>
+                <p class="card-excerpt">2025 Usage Guidelines Official Trademark of Martone™ NOTICE FROM LEGAL REPRESENTATIVES OF MARTONE INC. This statement establishes the official 2025 guidelines regarding the use, licensing, and protections associated with the intellectual property, image, and brand identity of Martone — the artist, author,</p>
+                <a href="blog.html" class="btn btn-outline-primary">Read
+                  More</a>
+              </div>
+            </article>
+          </div>
+
+          <!-- Featured Article 2 -->
+          <div class="col-lg-4">
+            <article class="featured-card">
+              <div class="card-image">
+                <div class="image-placeholder">
+                  <i class="fas fa-book"></i>
+                </div>
+              </div>
+              <div class="card-content">
+                <div class="card-meta">
+                  <span class="date">March 27, 2025</span>
+                  <span class="category">Books</span>
+                </div>
+                <h4 class="card-title">TuneCore’s Failures: An Independent Artist’s Struggle</h4>
+                <p class="card-excerpt">Pattern of inefficiency has caused unnecessary setbacks and has made it difficult to maintain a smooth release schedule. As an independent artist, selecting the right distributor is critical to ensuring my music reaches the audience it deserves. After switching from Label Worx...</p>
+                <a href="blog.html" class="read-more-link">Read More <i
+                    class="fas fa-arrow-right"></i></a>
+              </div>
+            </article>
+          </div>
+
+          <!-- Additional Articles Row -->
+          <div class="col-lg-4">
+            <article class="featured-card">
+              <div class="card-image">
+                <div class="image-placeholder">
+                  <i class="fas fa-music"></i>
+                </div>
+              </div>
+              <div class="card-content">
+                <div class="card-meta">
+                  <span class="date">June 27, 2025</span>
+                  <span class="category">Music</span>
+                </div>
+                <h4 class="card-title">Limited Edition Alert: Celebrate 10 Years with The Evolution of Martone Remix CD</h4>
+                <p class="card-excerpt">10th Anniversary of the Evolution of Martone Release 3.21.25 Exciting news for my fans and supporters! I hope this message finds you all in great spirits. Recently, I received an update from my distributor regarding the plans for the 10th Anniversary Remix</p>
+                <a href="blog.html" class="read-more-link">Read More <i
+                    class="fas fa-arrow-right"></i></a>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-lg-4">
+            <article class="featured-card">
+              <div class="card-image">
+                <div class="image-placeholder">
+                  <i class="fas fa-trophy"></i>
+                </div>
+              </div>
+              <div class="card-content">
+                <div class="card-meta">
+                  <span class="date">October 11, 2024</span>
+                  <span class="category">Awards</span>
+                </div>
+                <h4 class="card-title">10 Powerful Lessons I Learned From Coming Out – A Journey of Fear, Love, and Acceptance</h4>
+                <p class="card-excerpt">It’s October 11, 2024—National Coming Out Day—and I want to share my story. Coming out is a process, and the truth is, it never really ends. I’ve had many moments of “coming out,” from timid attempts as a child to the times</p>
+                <a href="blog.html" class="read-more-link">Read More <i
+                    class="fas fa-arrow-right"></i></a>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-lg-4">
+            <article class="featured-card">
+              <div class="card-image">
+                <div class="image-placeholder">
+                  <i class="fas fa-heart"></i>
+                </div>
+              </div>
+              <div class="card-content">
+                <div class="card-meta">
+                  <span class="date">August 6, 2024</span>
+                  <span class="category">Personal</span>
+                </div>
+                <h4 class="card-title">Unfiltered Truth: Two Must-Read Fall 2025 Books</h4>
+                <p class="card-excerpt">In Good Hands: Bad Faith and Burned Promises by Martone The Emperor of House Music From the Best-Selling Author of Deep & Raw: Two Must-Read Fall 2025 Books 2025 Book Releases by Martone include two powerful and socially relevant works that speak</p>
+                <a href="blog.html" class="read-more-link">Read More <i
+                    class="fas fa-arrow-right"></i></a>
+              </div>
+            </article>
+          </div>
+        </div>
+
+      </div>
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="row g-4">
-                <div class="col-lg-4">
-                    <div class="footer-brand">
-                        <h3 class="footer-logo">MARTONE</h3>
-                        <p class="footer-description">
-                            The Emperor of House Music, accomplished author, former TV show host, and radio personality.
-                        </p>
-                    </div>
-                </div>
-                
-                <div class="col-lg-2">
-                    <h5 class="footer-title">Menu</h5>
-                    <ul class="footer-links">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="biography.html">Biography</a></li>
-                        <li><a href="music.html">Music</a></li>
-                        <li><a href="press.html">Press</a></li>
-                    </ul>
-                </div>
-                
-                <div class="col-lg-2">
-                    <h5 class="footer-title">More</h5>
-                    <ul class="footer-links">
-                        <li><a href="store.html">Store</a></li>
-                        <li><a href="tour.html">Tour</a></li>
-                        <li><a href="style.html">Style</a></li>
-                        <li><a href="subscribe.html">Subscribe</a></li>
-                    </ul>
-                </div>
-                
-                <div class="col-lg-4">
-                    <h5 class="footer-title">Follow</h5>
-                    <div class="footer-social">
-                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="footer-bottom">
-                <div class="row align-items-center">
-                    <div class="col-md-12 text-center">
-                        <p class="copyright">
-                            &copy; 2025 Martone. All rights reserved.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
+     <footer class="footer">
 
-    <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="assets/js/main.js"></script>
-</body>
-</html>
+    <!-- Horizontal Image Carousel -->
+    <section class="image-carousel-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center mb-4">
+            <h2 class="section-title" data-animation="fadeInUp">Martone in Motion</h2>
+            <p class="section-subtitle">A glimpse into the artistry and performances</p>
+          </div>
+        </div>
+
+        <div id="imageCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <!-- First Slide -->
+            <div class="carousel-item active">
+              <div class="row g-3">
+                <div class="col-md-3 col-6">
+                  <img
+                    src="https://martoneonline.com/wp-content/uploads/2025/01/Phoenix-Rising-Official-Album-Cover-1024x1024.avif"
+                    class="img-fluid rounded shadow" alt="Phoenix Rising">
+                </div>
+                <div class="col-md-3 col-6">
+                  <img src="https://martoneonline.com/wp-content/uploads/2024/08/Fever-Extremes-Deep-Fever-Remix-A1.png"
+                    class="img-fluid rounded shadow" alt="Fever Extremes Remix">
+                </div>
+                <div class="col-md-3 col-6">
+                  <img src="https://martoneonline.com/wp-content/uploads/2024/09/Groove-Tonight-Remixes.png"
+                    class="img-fluid rounded shadow" alt="Groove Tonight Remixes">
+                </div>
+                <div class="col-md-3 col-6">
+                  <img src="https://martoneonline.com/wp-content/uploads/2024/09/I-Give-My-Heart-to-You--1024x1024.png"
+                    class="img-fluid rounded shadow" alt="I Give My Heart To You">
+                </div>
+              </div>
+            </div>
+
+            <!-- Second Slide -->
+            <div class="carousel-item">
+              <div class="row g-3">
+                <div class="col-md-3 col-6">
+                  <img
+                    src="https://martoneonline.com/wp-content/uploads/2024/09/All-Through-the-Night-Remixes-Cover-1024x1024.webp"
+                    class="img-fluid rounded shadow" alt="All Through the Night Remixes">
+                </div>
+                <div class="col-md-3 col-6">
+                  <img
+                    src="https://martoneonline.com/wp-content/uploads/2024/09/Martones-House-Workout-Essentials-3000-x-3000-px-1024x1024.webp"
+                    class="img-fluid rounded shadow" alt="House Workout Essentials">
+                </div>
+                <div class="col-md-3 col-6">
+                  <img
+                    src="https://martoneonline.com/wp-content/uploads/2024/09/WERK-THAT-ALBUM-COVER-MARTONE-2025-1024x1024.png"
+                    class="img-fluid rounded shadow" alt="Werk That Album">
+                </div>
+                <div class="col-md-3 col-6">
+                  <img
+                    src="https://martoneonline.com/wp-content/uploads/2024/08/Fuck-Me-Baby-2025-Album-Cover-Martone-1.webp"
+                    class="img-fluid rounded shadow" alt="Fuck Me Baby 2025">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Carousel Controls -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#imageCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#imageCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Promo Bar Section (moved below carousel) -->
+    <section class="promo-bar">
+      <div class="promo-content">
+        <a href="https://martoneonline.com/2025/08/06/martone-2025-book-releases/">Unfiltered Truth: Two Must-Read Fall
+          2025 Books</a>
+        <a href="https://martoneonline.com/2025/07/16/usage-of-martone-likeness-rights-2025/">2025 Usage Guidelines:
+          Martone’s Image, Likeness, and Brand Identity</a>
+        <a href="https://martoneonline.com/2025/06/27/ekstase-by-martone-2025/">5 Reasons “EKSTASÉ” Is the Erotic Pop
+          Single 2025 Didn’t See Coming</a>
+        <a href="https://martoneonline.com/2025/06/24/martone-album-of-the-year-jma-2025/">10 Years in the Making:
+          Martone Scores Josie Music Awards Nomination</a>
+        <a href="https://martoneonline.com/2025/05/19/martone-on-reclaiming-my-power/">Martone’s Journey: Reclaiming
+          Power, Legacy & Creativity Through Music and Resilience</a>
+      </div>
+    </section>
+
+    <!-- Footer Bottom -->
+    
+<section class="quicklink-bar">
+            <div class="container" id="customised-footer">
+                <div class="row g-4">
+                    <div class="col-lg-4">
+                        <div class="footer-brand">
+                            <h3 class="footer-logo">MARTONE</h3>
+                            <p class="footer-description">
+                                The Emperor of House Music, accomplished author,
+                                former TV show host, and radio personality.
+                                Creating exceptional music and literary works
+                                that inspire and entertain.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2">
+                        <h5 class="footer-title">Quick Links</h5>
+                        <ul class="footer-links">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="biography.html">Biography</a></li>
+                            <li><a href="music.html">Music</a></li>
+                            <li><a href="press.html">Press</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-2">
+                        <h5 class="footer-title">Explore</h5>
+                        <ul class="footer-links">
+                            <li><a href="store.html">Store</a></li>
+                            <li><a href="tour.html">Tour</a></li>
+                            <li><a href="style.html">Style</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-2">
+                        <h5 class="footer-title">Connect</h5>
+                        <ul class="footer-links">
+                            <li><a href="subscribe.html">Subscribe</a></li>                        
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-2">
+                        <h5 class="footer-title">Follow</h5>
+                        <div class="footer-social">
+                        <a target="_blank" class="social-link" href="https://facebook.com/therealmartone">
+                                <i class="fab fa-facebook-f"></i
+                            ></a>
+                            <a target="_blank" href="https://bsky.app/profile/martoneonline.com"class="social-link"
+                                ><i class="fab fa-twitter"></i
+                            ></a>
+                            <a target="_blank" href="https://www.pinterest.com/TheEmperorOfHouseMusic/" class="social-link"
+                                ><i class="fab fa-pinterest"></i
+                            ></a>
+                        </div>
+                    </div>
+                </div>
+
+                 <!-- Footer Bottom -->
+
+            </div>
+     </section>
+  </footer>
+<footer class="footer-section text-white py-4">
+  <div class="container">
+    <div class="row align-items-center text-center text-md-start">
+      
+      <!-- Left Column -->
+      <div class="col-md-6 mb-2 mb-md-0">
+        <p class="mb-0">
+          © 2025 Martone Inc. All rights reserved.
+        </p>
+      </div>
+      
+      <!-- Right Column -->
+      <div class="col-md-6 text-md-end">
+        <p class="mb-0 small">
+          Martone™ and The Emperor of House Music™ are trademarks used in connection with music, books, fashion, 
+          and entertainment services. Unauthorized use is prohibited.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</footer>
+      <!-- Back to Top Button -->
+      <button class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+      </button>
+
+      <!-- Scripts -->
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script src="assets/js/main.js"></script>
+      <script src="assets/js/animations.js"></script>
+    </body>
+
+  </html>
+  <style>
+
+/* Banner styling */
+.banner-wrapper img {
+  width: 100%;      /* makes it responsive to container width */
+  height: auto;     /* keeps original aspect ratio */
+  display: block;   /* removes unwanted space below image */
+}
+.music-availability p {
+  text-align: justify;
+}
+
+
+</style>

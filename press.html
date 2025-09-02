@@ -1,206 +1,661 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Press - Martone</title>
-    <meta name="description" content="Latest press coverage, media features, and official press releases from Martone - The Emperor of House Music.">
-    
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="assets/css/main.css">
-</head>
-<body>
-    <!-- Header -->
-    <nav class="navbar navbar-expand-lg fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">
-                <span class="brand-text">MARTONE</span>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Press - Martone | Media Coverage & Press Releases</title>
+        <meta name="description"
+            content="Latest press coverage, media features, and official press releases from Martone - The Emperor of House Music.">
+
+        <!-- Bootstrap CSS -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+            rel="stylesheet">
+        <!-- Font Awesome -->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <!-- Google Fonts -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet">
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="assets/css/main.css">
+    </head>
+    <body>
+        <!-- Loading Screen -->
+        <div id="loading-screen">
+            <div class="loading-content">
+                <div class="loading-logo">MARTONE</div>
+                <div class="loading-spinner"></div>
+            </div>
+        </div>
+
+        <!-- Social Media Sidebar -->
+        <div class="social-sidebar">
+            <a target="_blank" class="social-link"
+                href="https://facebook.com/therealmartone"
+                data-platform="facebook">
+                <i class="fab fa-facebook-f"></i>
             </a>
-            
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="biography.html">Biography</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="music.html">Music</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="press.html">Press</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="store.html">Store</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="tour.html">Tour</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="style.html">Style By Martone</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="subscribe.html">Subscribe</a>
-                    </li>
-                </ul>
-                
-                <!-- Language Selector -->
-                <div class="language-selector ms-3">
-                    <div class="dropdown">
-                        <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown">
-                            <img src="https://flagcdn.com/16x12/us.png" alt="English"> EN
-                        </button>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#"><img src="https://flagcdn.com/16x12/us.png" alt="English"> English</a></li>
-                        </ul>
+            <a target="_blank" href="https://bsky.app/profile/martoneonline.com"
+                class="social-link" data-platform="twitter">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a target="_blank"
+                href="https://www.pinterest.com/TheEmperorOfHouseMusic/"
+                class="social-link" data-platform="pintrest">
+                <i class="fab fa-pinterest"></i>
+            </a>
+            <div class="social-more">
+                <i class="fas fa-plus"></i>
+            </div>
+        </div>
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <span class="brand-text"><a href="index.html"><img alt
+                src="logo.png"></a></span>
+        </a>
+
+                <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"
+                                href="biography.html">Biography</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="music.html">Music</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active"
+                                href="press.html">Press</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="store.html">Store</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="tour.html">Tour</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="style.html">Style By
+                                Martone</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"
+                                href="subscribe.html">Subscribe</a>
+                        </li>
+                    </ul>
+
+                    <!-- Language Selector -->
+                    <div class="language-selector ms-3">
+                        <div class="dropdown">
+                            <button class="btn dropdown-toggle" type="button"
+                                data-bs-toggle="dropdown">
+                                <img src="https://flagcdn.com/16x12/us.png"
+                                    alt="English"> EN
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#"><img
+                                            src="https://flagcdn.com/16x12/us.png"
+                                            alt="English"> English</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </nav>
+        </nav>
 
-    <!-- Banner -->
-    <section class="page-banner">
-        <div class="banner-content">
+        <section class="page-header static-banner">
+            <div class="container-fluid p-0">
+                <div class="banner-image">
+                    <div
+                        class="overlay d-flex align-items-center justify-content-center text-center">
+                        <!-- Optional text or logo inside banner -->
+                        <!-- <h1 class="text-white">Martone: The Emperor of House Music</h1> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <style>
+  .static-banner .banner-image {
+    position: relative;
+    height: 100vh; /* full screen */
+    background-image: url('https://martoneonline.com/wp-content/uploads/2024/09/Martone-Official-Press-Release-Photo.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; /* ensures full image is visible */
+    background-color: #000; /* fill sides with black if aspect ratio doesn’t fit */
+  }
+
+  /* Overlay (optional for dark effect) */
+  .static-banner .banner-image .overlay {
+    position: absolute;
+    inset: 0;
+  }
+</style>
+
+        <section class="martone-section py-3">
+            <div class="container">
+
+                <!-- Section Heading -->
+                <div class="row mb-4">
+                    <div class="col-12 text-center">
+                        <h2 class="section-title">Martone: The Emperor of House
+                            Music</h2>
+                    </div>
+                </div>
+
+                <!-- Float Layout -->
+                <div class="martone-layout">
+
+                    <!-- Image -->
+                    <img
+                        src="https://martoneonline.com/wp-content/uploads/2024/09/Martone-Official-Press-Release-Photo.png"
+                        alt="Martone Official Photo"
+                        class="martone-image">
+
+                    <!-- Text -->
+                    <div class="martone-text">
+                        <p><strong>Martone, widely recognized as “The Emperor of
+                                House Music,”</strong> has made an indelible
+                            mark on the dance music scene with his unmistakable
+                            voice and electrifying stage presence. Blending
+                            soulful vocals with infectious house beats, Martone
+                            continues to captivate audiences worldwide, making
+                            him one of the most innovative and dynamic artists
+                            in the genre.</p>
+
+                        <h4>Early Beginnings and Passion for Music</h4>
+                        <p>Born in Lansing, Michigan, Martone’s musical journey
+                            started at a young age. Influenced by icons such as
+                            Luther Vandross, Whitney Houston, Janet Jackson, and
+                            Grace Jones, his passion for music grew into a
+                            mission to create songs that move people physically
+                            and emotionally.</p>
+                        <p>Martone’s debut album, <em>The Evolution of
+                                Martone</em>, introduced his bold, fresh sound
+                            to the world. Celebrating its 10-year anniversary
+                            with a special remix edition, the album helped pave
+                            the way for his growth as an artist and has remained
+                            a fan favorite.</p>
+
+                        <h4>Chart-Topping Hits and Collaborations</h4>
+                        <p>Over the years, Martone has released numerous hits
+                            that have resonated across dance floors worldwide.
+                            Singles like “Love Out Loud” and “Groove Tonight”
+                            have solidified his place within the house music
+                            genre, earning him a dedicated fan base and spots on
+                            international charts. His ability to fuse deep house
+                            beats with empowering vocals sets him apart, making
+                            each track a powerful experience.</p>
+
+                        <p>In addition to his solo work, Martone has
+                            collaborated with some of the industry’s top
+                            producers, DJs, and musicians. His upcoming album,
+                            <em>Phoenix Rising</em>, is already creating buzz as
+                            one of the most anticipated releases of 2025.
+                            Produced in collaboration with Michael E. Williams
+                            II of Platinum Keyz Productions and Marvin DJ
+                            Extreme Detroit Hairston, the album promises to
+                            showcase Martone’s evolution as an artist, with a
+                            blend of classic house sounds and contemporary
+                            influences.</p>
+
+                        <h4>A Visionary in the House Music Scene</h4>
+                        <p>Martone’s artistry goes beyond music. His work is a
+                            reflection of his personal experiences, with themes
+                            of love, empowerment, and resilience at the core of
+                            his sound. His live performances are not just
+                            shows—they are transformative experiences that leave
+                            audiences inspired and energized.</p>
+
+                        <p>As an openly gay Black man, Martone uses his platform
+                            to uplift and empower the LGBTQ+ community. His song
+                            “Love Out Loud” has become more than just a dance
+                            anthem; it’s a message of self-acceptance and living
+                            unapologetically. Martone’s contributions to both
+                            the music industry and the community make him a
+                            trailblazer, setting an example for future
+                            generations of artists.</p>
+
+                        <h4>Looking Forward: Phoenix Rising and Beyond</h4>
+                        <p>Martone’s upcoming album, <em>Phoenix Rising</em>,
+                            represents a new chapter in his career. After facing
+                            personal and professional challenges, Martone has
+                            emerged stronger than ever. The album’s title
+                            symbolizes his rebirth, rising from the ashes and
+                            taking his place at the forefront of house music
+                            once again.</p>
+
+                        <p>Fans can expect <em>Phoenix Rising</em> to feature a
+                            mix of soulful, high-energy tracks and reflective
+                            pieces that highlight Martone’s journey. While the
+                            details of the lead single remain a mystery, the
+                            anticipation surrounding this project only grows as
+                            Martone prepares to redefine the genre once
+                            more.</p>
+
+                        <h4>Stay Connected with Martone</h4>
+                        <p>Stay up to date with Martone’s latest news, releases,
+                            and upcoming tour dates by visiting his official
+                            website, <a href="https://martoneonline.com"
+                                target="_blank">MartoneOnline.com</a>. Fans can
+                            also find exclusive interviews, event announcements,
+                            and behind-the-scenes content that highlights
+                            Martone’s continued influence on the music
+                            industry.</p>
+
+                        <p><em>“I’ve always used my music to express the
+                                emotions I feel and the lessons I’ve learned in
+                                life,”</em> says Martone. “Writing these blog
+                            posts gives me a chance to connect more personally
+                            with my audience and share the real-life stories
+                            that inspire my songs.”</p>
+
+                        <p>For press inquiries, booking information, or more
+                            details about Martone, please contact
+                            <strong>Martone Management</strong>.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <style>
+  .martone-layout {
+    overflow: hidden;
+  }
+  .martone-image {
+    float: left;
+    width: 40%;
+    margin-right: 20px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  }
+  .martone-text {
+    text-align: justify;
+  }
+  @media (max-width: 768px) {
+    .martone-image {
+      float: none;
+      width: 100%;
+      margin: 0 auto 20px;
+      display: block;
+    }
+  }
+</style>
+
+        <section class="press-release-section">
+            <div class="container">
+                <!-- Section Header -->
+                <div class="row">
+                    <div class="col-12 text-center mb-5">
+                        <h2 class="section-title">Press Releases & Media</h2>
+                        <p class="section-subtitle">Explore the latest news,
+                            press coverage, and official announcements.</p>
+                    </div>
+                </div>
+
+                <!-- First Row -->
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+                        <iframe
+                            src="https://docs.google.com/viewer?url=https://martoneonline.com/wp-content/uploads/2024/10/EINPresswire-748364609-martone-releases-sensational-new-single-all-through-the-night-remixes-available-worldwide-2.pdf&embedded=true"
+                            width="100%" height="550" style="border:none;">
+                        </iframe>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <iframe
+                            src="https://docs.google.com/viewer?url=https://martoneonline.com/wp-content/uploads/2024/09/EINPresswire-745697846-martone-announces-new-album-phoenix-rising-for-june-30-2025-with-major-milestones-and-exciting-collaborations.pdf&embedded=true"
+                            width="100%" height="550" style="border:none;">
+                        </iframe>
+                    </div>
+                </div>
+
+                <!-- Second Row -->
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+                        <iframe
+                            src="https://docs.google.com/viewer?url=https%3A%2F%2Fmartoneonline.com%2Fwp-content%2Fuploads%2F2024%2F10%2FHit-Artist-Martone-Talks-About-His-New-Album-Erogenous-Zone-And-His-Songwriting-_-by-quotes-writer-_-Medium.pdf&embedded=true"
+                            width="100%" height="550" style="border:none;">
+                        </iframe>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <iframe
+                            src="https://docs.google.com/viewer?url=https%3A%2F%2Fmartoneonline.com%2Fwp-content%2Fuploads%2F2024%2F10%2FMartone-Announces-Anime-Music-Video-For-His-New-Single-_Love-Out-Loud_.pdf&embedded=true"
+                            width="100%" height="550" style="border:none;">
+                        </iframe>
+                    </div>
+                </div>
+
+                <!-- Third Row (Extra Placeholders) -->
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+                        <iframe
+                            src="https://docs.google.com/viewer?url=https%3A%2F%2Fmartoneonline.com%2Fwp-content%2Fuploads%2F2024%2F10%2FEINPresswire-496824621-deep-inside-martone-s-erogenous-zone-3.pdf&embedded=true"
+                            width="100%" height="550" style="border:none;"
+                            title="Press Release 5"></iframe>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <iframe
+                            src="https://docs.google.com/viewer?url=https%3A%2F%2Fmartoneonline.com%2Fwp-content%2Fuploads%2F2024%2F10%2FMartone-Produces-Electro-House-For-Your-Weekly-Grind-%E2%80%93-JamSphere.pdf&embedded=true"
+                            width="100%" height="550" style="border:none;"
+                            title="Press Release 6"></iframe>
+                    </div>
+                </div>
+
+                <!-- Fourth Row -->
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+                        <iframe
+                            src="https://docs.google.com/viewer?url=https%3A%2F%2Fmartoneonline.com%2Fwp-content%2Fuploads%2F2024%2F10%2FWDSR-Interview.pdf&embedded=true"
+                            width="100%" height="550" style="border:none;"
+                            title="Press Release 7"></iframe>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <iframe
+                            src="https://docs.google.com/viewer?url=https%3A%2F%2Fmartoneonline.com%2Fwp-content%2Fuploads%2F2024%2F10%2FMartone_-Erogenous-Zone-%E2%80%93-honest-compassionate-and-dynamic-%E2%80%93-JamSphere.pdf&embedded=true"
+                            width="100%" height="550" style="border:none;"
+                            title="Press Release 8"></iframe>
+                    </div>
+                </div>
+
+                <!-- Fifth Row -->
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+                        <iframe
+                            src="https://docs.google.com/viewer?url=https%3A%2F%2Fmartoneonline.com%2Fwp-content%2Fuploads%2F2024%2F10%2FMartone-Talks-Enotram-Records-Dance-Music-And-The-Search-For-New-Artists.pdf&embedded=true"
+                            width="100%" height="550" style="border:none;"
+                            title="Press Release 9"></iframe>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <iframe
+                            src="https://docs.google.com/viewer?url=https%3A%2F%2Fmartoneonline.com%2Fwp-content%2Fuploads%2F2024%2F10%2FWhen-Passion-Calls-Martone-Answers_-A-Review-Of-TEOM-The-Evolution-Of-Martone-Deluxe-Edition-%E2%80%A2-Ruelon.pdf&embedded=true"
+                            width="100%" height="550" style="border:none;"
+                            title="Press Release 10"></iframe>
+                    </div>
+                </div>
+
+                <!-- Sixth Row -->
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+                        <iframe
+                            src="https://docs.google.com/viewer?url=https%3A%2F%2Fmartoneonline.com%2Fwp-content%2Fuploads%2F2024%2F10%2FMartone-Talks-Grammys-And-Upcoming-Album-In-New-Interview.pdf&embedded=true"
+                            width="100%" height="550" style="border:none;"
+                            title="Press Release 11"></iframe>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <iframe
+                            src="https://docs.google.com/viewer?url=https%3A%2F%2Fmartoneonline.com%2Fwp-content%2Fuploads%2F2024%2F10%2FMartone_-From-a-precocious-talent-to-a-caring-disposition-based-on-love-%E2%80%93-JamSphere.pdf&embedded=true"
+                            width="100%" height="550" style="border:none;"
+                            title="Press Release 12"></iframe>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="martone-media py-2">
+            <div class="container">
+                <div class="row align-items-center">
+
+                    <!-- Left Column (Clickable Image) -->
+                    <div class="col-md-6 mb-4 mb-md-0 text-center">
+                        <a href="https://martoneonline.com/store"
+                            target="_blank">
+                            <img
+                                decoding="async"
+                                src="https://martoneonline.com/wp-content/uploads/2024/09/Martone-Collections-for-Store-A-1536x864.webp"
+                                alt="Martone Collections Store"
+                                class="img-fluid rounded shadow media-border">
+                        </a>
+                    </div>
+
+                    <!-- Right Column (Video Embed) -->
+                    <div class="col-md-6 text-center">
+                        <div class="ratio ratio-16x9 media-border">
+                            <iframe
+                                src="https://www.youtube.com/embed/VIDEO_ID_HERE?autoplay=1&mute=1"
+                                title="Martone Video"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <style>
+  .media-border {
+    border: 2px solid rgb(212, 175, 55);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+</style>
+
+        <!-- Intellectual Property Notice Section -->
+        <section class="ip-trademark py-4">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-8 mx-auto text-center">
-                        <h1 class="page-title">Press</h1>
-                        <p class="page-subtitle">Media Coverage & Press Releases</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Image with Content -->
-    <section class="press-intro py-5">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=600&h=400&fit=crop&q=80" alt="Press Coverage" class="img-fluid rounded">
-                </div>
-                <div class="col-lg-6">
-                    <div class="press-content">
-                        <h2>Media Coverage</h2>
-                        <p>Martone has been featured in major publications and media outlets worldwide, garnering attention for groundbreaking musical achievements, literary success, and cultural impact as The Emperor of House Music.</p>
-                        
-                        <p>From chart-topping achievements to bestselling books, Martone's multifaceted career continues to attract media attention across music, literature, and entertainment industries.</p>
-                        
-                        <p>Recent highlights include coverage of "Deep & Raw" reaching #3 on Amazon bestsellers, "Love You I Do" hitting #5 on iTunes charts, and "Chocolate" climbing UK Electronic Dance Charts a decade after release.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Embedded Press Articles -->
-    <section class="press-articles py-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 text-center mb-5">
-                    <h2 class="section-title">Featured Press Articles</h2>
-                </div>
-            </div>
-            
-            <!-- EmbedPress Articles -->
-            <div class="row g-4">
-                <div class="col-lg-6">
-                    <div class="press-embed">
-                        <iframe src="https://martoneonline.com/2025/04/12/deep-raw-3-on-amazon-best-sellers/" width="100%" height="400" frameborder="0"></iframe>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="press-embed">
-                        <iframe src="https://martoneonline.com/2025/06/27/ekstase-by-martone-2025/" width="100%" height="400" frameborder="0"></iframe>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="press-embed">
-                        <iframe src="https://martoneonline.com/2025/05/16/too-bad-so-sad-radio-edit/" width="100%" height="400" frameborder="0"></iframe>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="press-embed">
-                        <iframe src="https://martoneonline.com/2025/06/24/martone-album-of-the-year-jma-2025/" width="100%" height="400" frameborder="0"></iframe>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="row g-4">
-                <div class="col-lg-4">
-                    <div class="footer-brand">
-                        <h3 class="footer-logo">MARTONE</h3>
-                        <p class="footer-description">
-                            The Emperor of House Music, accomplished author, former TV show host, and radio personality.
-                        </p>
-                    </div>
-                </div>
-                
-                <div class="col-lg-2">
-                    <h5 class="footer-title">Menu</h5>
-                    <ul class="footer-links">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="biography.html">Biography</a></li>
-                        <li><a href="music.html">Music</a></li>
-                        <li><a href="press.html">Press</a></li>
-                    </ul>
-                </div>
-                
-                <div class="col-lg-2">
-                    <h5 class="footer-title">More</h5>
-                    <ul class="footer-links">
-                        <li><a href="store.html">Store</a></li>
-                        <li><a href="tour.html">Tour</a></li>
-                        <li><a href="style.html">Style</a></li>
-                        <li><a href="subscribe.html">Subscribe</a></li>
-                    </ul>
-                </div>
-                
-                <div class="col-lg-4">
-                    <h5 class="footer-title">Follow</h5>
-                    <div class="footer-social">
-                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="footer-bottom">
-                <div class="row align-items-center">
-                    <div class="col-md-12 text-center">
-                        <p class="copyright">
-                            &copy; 2025 Martone. All rights reserved.
+                    <div class="col-12">
+                        <h4 class="ip-title"><b>Intellectual Property &
+                                Trademark Notice</b></h4>
+                        <p class="rerelease-note mt-3">
+                            Martone™ is the official brand identity of Martone
+                            Inc. All public assets including images, press
+                            language, and downloadable materials are protected
+                            under copyright and trademark law
                         </p>
                     </div>
                 </div>
             </div>
-        </div>
-    </footer>
+        </section>
 
-    <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="assets/js/main.js"></script>
-</body>
+        <!-- Footer -->
+         <footer class="footer">
+
+    <!-- Horizontal Image Carousel -->
+    <section class="image-carousel-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center mb-4">
+            <h2 class="section-title" data-animation="fadeInUp">Martone in Motion</h2>
+            <p class="section-subtitle">A glimpse into the artistry and performances</p>
+          </div>
+        </div>
+
+        <div id="imageCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <!-- First Slide -->
+            <div class="carousel-item active">
+              <div class="row g-3">
+                <div class="col-md-3 col-6">
+                  <img
+                    src="https://martoneonline.com/wp-content/uploads/2025/01/Phoenix-Rising-Official-Album-Cover-1024x1024.avif"
+                    class="img-fluid rounded shadow" alt="Phoenix Rising">
+                </div>
+                <div class="col-md-3 col-6">
+                  <img src="https://martoneonline.com/wp-content/uploads/2024/08/Fever-Extremes-Deep-Fever-Remix-A1.png"
+                    class="img-fluid rounded shadow" alt="Fever Extremes Remix">
+                </div>
+                <div class="col-md-3 col-6">
+                  <img src="https://martoneonline.com/wp-content/uploads/2024/09/Groove-Tonight-Remixes.png"
+                    class="img-fluid rounded shadow" alt="Groove Tonight Remixes">
+                </div>
+                <div class="col-md-3 col-6">
+                  <img src="https://martoneonline.com/wp-content/uploads/2024/09/I-Give-My-Heart-to-You--1024x1024.png"
+                    class="img-fluid rounded shadow" alt="I Give My Heart To You">
+                </div>
+              </div>
+            </div>
+
+            <!-- Second Slide -->
+            <div class="carousel-item">
+              <div class="row g-3">
+                <div class="col-md-3 col-6">
+                  <img
+                    src="https://martoneonline.com/wp-content/uploads/2024/09/All-Through-the-Night-Remixes-Cover-1024x1024.webp"
+                    class="img-fluid rounded shadow" alt="All Through the Night Remixes">
+                </div>
+                <div class="col-md-3 col-6">
+                  <img
+                    src="https://martoneonline.com/wp-content/uploads/2024/09/Martones-House-Workout-Essentials-3000-x-3000-px-1024x1024.webp"
+                    class="img-fluid rounded shadow" alt="House Workout Essentials">
+                </div>
+                <div class="col-md-3 col-6">
+                  <img
+                    src="https://martoneonline.com/wp-content/uploads/2024/09/WERK-THAT-ALBUM-COVER-MARTONE-2025-1024x1024.png"
+                    class="img-fluid rounded shadow" alt="Werk That Album">
+                </div>
+                <div class="col-md-3 col-6">
+                  <img
+                    src="https://martoneonline.com/wp-content/uploads/2024/08/Fuck-Me-Baby-2025-Album-Cover-Martone-1.webp"
+                    class="img-fluid rounded shadow" alt="Fuck Me Baby 2025">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Carousel Controls -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#imageCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#imageCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Promo Bar Section (moved below carousel) -->
+    <section class="promo-bar">
+      <div class="promo-content">
+        <a href="https://martoneonline.com/2025/08/06/martone-2025-book-releases/">Unfiltered Truth: Two Must-Read Fall
+          2025 Books</a>
+        <a href="https://martoneonline.com/2025/07/16/usage-of-martone-likeness-rights-2025/">2025 Usage Guidelines:
+          Martone’s Image, Likeness, and Brand Identity</a>
+        <a href="https://martoneonline.com/2025/06/27/ekstase-by-martone-2025/">5 Reasons “EKSTASÉ” Is the Erotic Pop
+          Single 2025 Didn’t See Coming</a>
+        <a href="https://martoneonline.com/2025/06/24/martone-album-of-the-year-jma-2025/">10 Years in the Making:
+          Martone Scores Josie Music Awards Nomination</a>
+        <a href="https://martoneonline.com/2025/05/19/martone-on-reclaiming-my-power/">Martone’s Journey: Reclaiming
+          Power, Legacy & Creativity Through Music and Resilience</a>
+      </div>
+    </section>
+
+    <!-- Footer Bottom -->
+    
+<section class="quicklink-bar">
+            <div class="container" id="customised-footer">
+                <div class="row g-4">
+                    <div class="col-lg-4">
+                        <div class="footer-brand">
+                            <h3 class="footer-logo">MARTONE</h3>
+                            <p class="footer-description">
+                                The Emperor of House Music, accomplished author,
+                                former TV show host, and radio personality.
+                                Creating exceptional music and literary works
+                                that inspire and entertain.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2">
+                        <h5 class="footer-title">Quick Links</h5>
+                        <ul class="footer-links">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="biography.html">Biography</a></li>
+                            <li><a href="music.html">Music</a></li>
+                            <li><a href="press.html">Press</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-2">
+                        <h5 class="footer-title">Explore</h5>
+                        <ul class="footer-links">
+                            <li><a href="store.html">Store</a></li>
+                            <li><a href="tour.html">Tour</a></li>
+                            <li><a href="style.html">Style</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-2">
+                        <h5 class="footer-title">Connect</h5>
+                        <ul class="footer-links">
+                            <li><a href="subscribe.html">Subscribe</a></li>                        
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-2">
+                        <h5 class="footer-title">Follow</h5>
+                        <div class="footer-social">
+                        <a target="_blank" class="social-link" href="https://facebook.com/therealmartone">
+                                <i class="fab fa-facebook-f"></i
+                            ></a>
+                            <a target="_blank" href="https://bsky.app/profile/martoneonline.com"class="social-link"
+                                ><i class="fab fa-twitter"></i
+                            ></a>
+                            <a target="_blank" href="https://www.pinterest.com/TheEmperorOfHouseMusic/" class="social-link"
+                                ><i class="fab fa-pinterest"></i
+                            ></a>
+                        </div>
+                    </div>
+                </div>
+
+                 <!-- Footer Bottom -->
+
+            </div>
+     </section>
+  </footer>
+<footer class="footer-section text-white py-4">
+  <div class="container">
+    <div class="row align-items-center text-center text-md-start">
+      
+      <!-- Left Column -->
+      <div class="col-md-6 mb-2 mb-md-0">
+        <p class="mb-0">
+          © 2025 Martone Inc. All rights reserved.
+        </p>
+      </div>
+      
+      <!-- Right Column -->
+      <div class="col-md-6 text-md-end">
+        <p class="mb-0 small">
+          Martone™ and The Emperor of House Music™ are trademarks used in connection with music, books, fashion, 
+          and entertainment services. Unauthorized use is prohibited.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</footer>
+        <!-- Back to Top Button -->
+        <button class="back-to-top" id="backToTop">
+            <i class="fas fa-chevron-up"></i>
+        </button>
+
+        <!-- Scripts -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="assets/js/main.js"></script>
+        <script src="assets/js/animations.js"></script>
+    </body>
 </html>

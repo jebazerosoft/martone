@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tour - Martone</title>
+    <title>Tour - Martone | Upcoming Events & Live Performances</title>
     <meta name="description" content="Experience Martone live - upcoming tour dates, concerts, and special events featuring The Emperor of House Music.">
     
     <!-- Bootstrap CSS -->
@@ -16,12 +16,37 @@
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
-    <!-- Header -->
-    <nav class="navbar navbar-expand-lg fixed-top">
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="loading-content">
+            <div class="loading-logo">MARTONE</div>
+            <div class="loading-spinner"></div>
+        </div>
+    </div>
+
+    <!-- Social Media Sidebar -->
+    <div class="social-sidebar">
+        <a target="_blank" class="social-link" href="https://facebook.com/therealmartone" data-platform="facebook">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+        <a target="_blank" href="https://bsky.app/profile/martoneonline.com" class="social-link" data-platform="twitter">
+            <i class="fab fa-twitter"></i>
+        </a>
+        <a target="_blank" href="https://www.pinterest.com/TheEmperorOfHouseMusic/" class="social-link" data-platform="pintrest">
+            <i class="fab fa-pinterest"></i>
+        </a>  
+        <div class="social-more">
+            <i class="fas fa-plus"></i>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg">
         <div class="container">
-            <a class="navbar-brand" href="index.html">
-                <span class="brand-text">MARTONE</span>
-            </a>
+         <a class="navbar-brand" href="index.html">
+          <span class="brand-text"><a href="index.html"><img alt
+                src="logo.png"></a></span>
+        </a>
             
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span></span>
@@ -71,148 +96,716 @@
             </div>
         </div>
     </nav>
+<!-- Tour Page (Bootstrap 5) -->
 
-    <!-- Page Banner -->
-    <section class="page-banner">
-        <div class="banner-content">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 mx-auto text-center">
-                        <h1 class="page-title">Tour</h1>
-                        <p class="page-subtitle">Live Performances & Events</p>
-                    </div>
+<!-- Biography Banner Section -->
+
+<section class="page-header music-header">
+            <div class="container-fluid p-0">
+                <div class="banner-wrapper text-center">
+                    <img
+                        src="https://martoneonline.com/wp-content/uploads/2025/02/cropped-TEOM-2.12.25-1600-x-560-px-png.avif"
+                        alt="Martone Banner" class="img-fluid">
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Videos Section -->
-    <section class="tour-videos py-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 text-center mb-5">
-                    <h2 class="section-title">Live Performance Videos</h2>
-                </div>
-            </div>
-            <div class="row g-4">
-                <div class="col-lg-6">
-                    <div class="video-embed">
-                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Live Performance 1" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="video-embed">
-                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Live Performance 2" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="video-embed">
-                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Concert Highlights" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="video-embed">
-                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Tour Documentary" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+        <style>
+.banner-wrapper img {
+  width: 100%;      /* makes it responsive to container width */
+  height: auto;     /* keeps original aspect ratio */
+  display: block;   /* removes unwanted space below image */
+}
+</style>
+<section class="tour">
+  <div class="container">
 
-    <!-- Content Section -->
-    <section class="tour-content py-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 mx-auto">
-                    <div class="tour-info">
-                        <h2>Experience The Emperor Live</h2>
-                        <p>Join Martone on his electrifying tour as The Emperor of House Music brings his signature sound to stages worldwide. Each performance is a unique journey through the evolution of house music, featuring both classic hits and unreleased tracks.</p>
-                        
-                        <p>From intimate club venues to massive festival stages, Martone's live performances are renowned for their energy, creativity, and connection with the audience. Experience the power of house music as it was meant to be heard - live and unfiltered.</p>
-                        
-                        <h3>What to Expect</h3>
-                        <ul>
-                            <li>Chart-topping hits including "Love You I Do" and "Chocolate"</li>
-                            <li>Exclusive live versions and extended mixes</li>
-                            <li>Interactive performance elements</li>
-                            <li>Meet and greet opportunities</li>
-                            <li>Limited edition tour merchandise</li>
-                        </ul>
-                        
-                        <h3>Upcoming Dates</h3>
-                        <p>Stay tuned for announcements of upcoming tour dates. Follow our social media channels and subscribe to our newsletter to be the first to know about new shows and ticket releases.</p>
-                        
-                        <div class="text-center mt-4">
-                            <a href="subscribe.html" class="btn btn-primary btn-lg">
-                                <i class="fas fa-bell me-2"></i>
-                                Get Tour Notifications
-                            </a>
+        <div class="">
+            <div class="tour-header">
+                <h1>TOUR DATES</h1>
+                <p>Track to get concert, live stream and tour updates</p>
+            </div>
+            
+           <ul class="nav nav-tabs justify-content-between align-items-center" id="tourTabs" role="tablist">
+    <div class="d-flex">
+        <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="upcoming-tab" data-bs-toggle="tab" data-bs-target="#upcoming" type="button" role="tab">Upcoming Dates</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="past-tab" data-bs-toggle="tab" data-bs-target="#past" type="button" role="tab">Past Dates</button>
+        </li>
+    </div>
+    
+    <div class="text-end">
+<!--         <img src="https://images.bandsintown.com/images/bit_logo_black_web.png" alt="Bandsintown" class="logo" style="height:24px;">
+ -->        <p class="text-muted mb-0 small">Powered by Bandsintown</p>
+    </div>
+</ul>
+
+            
+            <div class="tab-content tour-content" id="tourTabsContent">
+                <!-- Upcoming Dates Tab -->
+                <div class="tab-pane fade show active" id="upcoming" role="tabpanel">
+                    <div class="no-dates">
+                        <i class="bi bi-calendar-event"></i>
+                        <h3>NO UPCOMING TOUR DATES</h3>
+                        <button class="btn btn-request"><i class="bi bi-megaphone"></i> REQUEST A SHOW</button>
+                    </div>
+                </div>
+                
+                <!-- Past Dates Tab -->
+  <!-- Past Dates Tab -->
+<div class="tab-pane fade" id="past" role="tabpanel">
+    <div class="row mt-4"> <!-- spacing added -->
+        
+        <!-- Card 1 -->
+        <div class="col-md-4">
+            <div class="event-card card mb-4 shadow-sm">
+                <div class="row g-0">
+                    <div class="col-4 event-date d-flex flex-column justify-content-center align-items-center text-white">
+                        <span class="event-day">18</span>
+                        <span class="event-month">AUG</span>
+                        <span class="event-year">2017</span>
+                    </div>
+                    <div class="col-8">
+                        <div class="event-details p-3">
+                            <h3 class="venue-name mb-1">Tomcats West</h3>
+                            <div class="location mb-2">
+                                <i class="bi bi-geo-alt"></i> Fort Worth, TX
+                            </div>
+                            <button class="btn btn-was-there"><i class="bi bi-check-circle"></i> I WAS THERE</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="row g-4">
-                <div class="col-lg-4">
-                    <div class="footer-brand">
-                        <h3 class="footer-logo">MARTONE</h3>
-                        <p class="footer-description">
-                            The Emperor of House Music, accomplished author, former TV show host, and radio personality.
-                        </p>
+        <!-- Card 2 -->
+        <div class="col-md-4">
+            <div class="event-card card mb-4 shadow-sm">
+                <div class="row g-0">
+                    <div class="col-4 event-date d-flex flex-column justify-content-center align-items-center text-white">
+                        <span class="event-day">21</span>
+                        <span class="event-month">JAN</span>
+                        <span class="event-year">2016</span>
                     </div>
-                </div>
-                
-                <div class="col-lg-2">
-                    <h5 class="footer-title">Menu</h5>
-                    <ul class="footer-links">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="biography.html">Biography</a></li>
-                        <li><a href="music.html">Music</a></li>
-                        <li><a href="press.html">Press</a></li>
-                    </ul>
-                </div>
-                
-                <div class="col-lg-2">
-                    <h5 class="footer-title">More</h5>
-                    <ul class="footer-links">
-                        <li><a href="store.html">Store</a></li>
-                        <li><a href="tour.html">Tour</a></li>
-                        <li><a href="style.html">Style</a></li>
-                        <li><a href="subscribe.html">Subscribe</a></li>
-                    </ul>
-                </div>
-                
-                <div class="col-lg-4">
-                    <h5 class="footer-title">Follow</h5>
-                    <div class="footer-social">
-                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="footer-bottom">
-                <div class="row align-items-center">
-                    <div class="col-md-12 text-center">
-                        <p class="copyright">
-                            &copy; 2025 Martone. All rights reserved.
-                        </p>
+                    <div class="col-8">
+                        <div class="event-details p-3">
+                            <h3 class="venue-name mb-1">Curtain Club</h3>
+                            <div class="location mb-2">
+                                <i class="bi bi-geo-alt"></i> Dallas, TX
+                            </div>
+                            <button class="btn btn-was-there"><i class="bi bi-check-circle"></i> I WAS THERE</button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </footer>
+
+        <!-- Card 3 -->
+        <div class="col-md-4">
+            <div class="event-card card mb-4 shadow-sm">
+                <div class="row g-0">
+                    <div class="col-4 event-date d-flex flex-column justify-content-center align-items-center text-white">
+                        <span class="event-day">14</span>
+                        <span class="event-month">JUN</span>
+                        <span class="event-year">2015</span>
+                    </div>
+                    <div class="col-8">
+                        <div class="event-details p-3">
+                            <h3 class="venue-name mb-1">The Prophet Bar</h3>
+                            <div class="location mb-2">
+                                <i class="bi bi-geo-alt"></i> Dallas, TX
+                            </div>
+                            <button class="btn btn-was-there"><i class="bi bi-check-circle"></i> I WAS THERE</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div><!-- /row -->
+</div>
+
+            </div>
+            
+            
+      
+    </div>
+
+   <!-- Event Section -->
+<div class="container">
+  <div class="row g-5 align-items-center">
+    
+    <!-- Left: Event Image -->
+    <div class="col-lg-6">
+      <a href="https://www.facebook.com/events/537344315519200/?acontext=%7B%22event_action_history%22%3A%5B%5D%7D" 
+         target="_blank" rel="noopener">
+        <img src="https://martoneonline.com/wp-content/uploads/2024/09/Martone-Performing-Live-Friday-January-17-2025-1024x576.webp" 
+             alt="Martone Performing Live Friday January 17 2025" 
+             class="img-fluid rounded shadow event-image">
+      </a>
+    </div>
+
+    <!-- Right: Event Content -->
+    <div class="col-lg-6">
+      <div class="event-content">
+        <p>🎤 <strong>Martone Live from Platinum Keyz Studios!</strong> 🎤<br>
+           Exclusive Online Streaming Event</p>
+
+        <p>Martone, The Emperor of House Music, is back! After years away from the stage, Martone will be performing live on <strong>Friday, January 17, 2025, at 12:15 p.m.</strong> from Platinum Keyz Studios in a special closed session exclusively for online streaming.</p>
+
+        <p>🎶 <strong>What to Expect:</strong></p>
+        <ul>
+          <li>Two live performances of Martone's favorites</li>
+          <li>An intimate Q&A session where Martone answers your questions</li>
+        </ul>
+
+        <p>Martone shared:  
+        <em>"I definitely feel like I owe my supporters something in terms of a live performance. It has been since August 2017, according to <a href="https://www.bandsintown.com/a/126618-martone" target="_blank" rel="noopener">BandsInTown</a>, that I have done a performance. I am actively seeking performance opportunities as this is something that I love to do, but it certainly has to be right on so many levels."</em></p>
+
+        <p>📅 <strong>Date:</strong> Friday, January 17, 2025<br>
+           🕛 <strong>Time:</strong> 12:15 p.m.<br>
+           📍 <strong>Location:</strong> Online Streaming Only</p>
+
+        <p>This is an event you won't want to miss! Mark your calendars, RSVP, and be part of this special moment with Martone. 🎶✨</p>
+
+        <!-- Hashtags -->
+        <div class="hashtags mt-3">
+          <a href="https://www.facebook.com/hashtag/martonelive" class="btn btn-outline-primary btn-sm me-2" target="_blank" rel="noopener">#MartoneLive</a>
+          <a href="https://www.facebook.com/hashtag/platinumkeyzstudios" class="btn btn-outline-primary btn-sm me-2" target="_blank" rel="noopener">#PlatinumKeyzStudios</a>
+          <a href="https://www.facebook.com/hashtag/onlineevent" class="btn btn-outline-primary btn-sm me-2" target="_blank" rel="noopener">#OnlineEvent</a>
+          <a href="https://www.facebook.com/hashtag/emperorofhousemusic" class="btn btn-outline-primary btn-sm me-2" target="_blank" rel="noopener">#EmperorOfHouseMusic</a>
+          <a href="https://www.facebook.com/hashtag/exclusiveperformance" class="btn btn-outline-primary btn-sm me-2" target="_blank" rel="noopener">#ExclusivePerformance</a>
+          <a href="https://www.facebook.com/hashtag/housemusic" class="btn btn-outline-primary btn-sm" target="_blank" rel="noopener">#HouseMusic</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Q&A Event Section -->
+<div class="container my-3">
+  <div class="row g-5 align-items-center">
+    
+    <!-- Left: Event Content -->
+    <div class="col-lg-6">
+      <div class="event-content">
+        <p>🎤 <strong>Q&A Session with Martone and Platinum Keyz Recordings Owner Michael E. Williams II!</strong> 🎤</p>
+
+        <p>Get ready for a one-of-a-kind experience as Martone, “The Emperor of House Music,” teams up with Michael E. Williams, II, the creative force behind Platinum Keyz Recordings, for an intimate Q&amp;A session! They’ll be diving deep into the creative journey behind the re-release of <em>Groove Tonight (Remixes)</em>, the exciting new album, and so much more!</p>
+
+        <p>This is a unique opportunity to gain insider insights into the making of these projects, hear untold stories from the studio, and get a sneak peek at what’s on the horizon. Whether you’re a dedicated fan, a fellow music lover, or just curious about the process, this event is perfect for you!</p>
+
+        <p>🗓️ <strong>Date:</strong> Monday, December 2, 2024<br>
+           🕒 <strong>Time:</strong> 12:15 PM, EDT<br>
+           📍 <strong>Location:</strong> @TheRealMartone on Facebook and @Iam_Martone on Instagram</p>
+
+        <p>Come prepared with your questions and be part of a lively discussion that explores the heart and soul of house music. Don’t miss out on this chance to connect with Martone and Michael E. Williams, II—let’s groove and chat together! 🎶✨</p>
+
+        <!-- Hashtags -->
+        <div class="hashtags mt-3">
+          <a href="https://www.facebook.com/hashtag/martone" class="btn btn-outline-primary btn-sm me-2" target="_blank" rel="noopener">#Martone</a>
+          <a href="https://www.facebook.com/hashtag/platinumkeyzrecordings" class="btn btn-outline-primary btn-sm me-2" target="_blank" rel="noopener">#PlatinumKeyzRecordings</a>
+          <a href="https://www.facebook.com/hashtag/housemusic" class="btn btn-outline-primary btn-sm me-2" target="_blank" rel="noopener">#HouseMusic</a>
+          <a href="https://www.facebook.com/hashtag/groovetonightqanda" class="btn btn-outline-primary btn-sm me-2" target="_blank" rel="noopener">#GrooveTonightQandA</a>
+          <a href="https://www.facebook.com/hashtag/musictalk" class="btn btn-outline-primary btn-sm" target="_blank" rel="noopener">#MusicTalk</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right: Event Image -->
+    <div class="col-lg-6">
+      <a href="https://www.facebook.com/events/1050939253151320/?acontext=%7B%22event_action_history%22%3A%5B%5D%7D" 
+         target="_blank" rel="noopener">
+        <img src="https://martoneonline.com/wp-content/uploads/2024/08/🎤-QA-Session-with-Martone-and-Platinum-Keyz-Recordings-Owner-Michael-E.-Williams-II-🎤-1024x576.webp" 
+             alt="Q&A Session with Martone and Michael E. Williams II" 
+             class="img-fluid rounded shadow event-image">
+      </a>
+    </div>
+
+  </div>
+</div>
+
+
+
+<div class="container my-4">
+  <div class="row g-4">
+    <!-- Left Video -->
+    <div class="col-md-6">
+      <div class="ratio ratio-16x9">
+                                <iframe src="https://www.youtube.com/embed/FT9B7a4zogw" title="Martone Performance" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+    </div>
+
+    <!-- Right Video -->
+    <div class="col-md-6">
+      <div class="ratio ratio-16x9">
+        <iframe 
+          src="https://www.youtube.com/embed/CiHSq9zn_vg?controls=1&rel=0&playsinline=1&cc_load_policy=0&autoplay=1&enablejsapi=1&origin=https%3A%2F%2Fmartoneonline.com&widgetid=3&forigin=https%3A%2F%2Fmartoneonline.com%2Ftour%2F&aoriginsup=1&gporigin=https%3A%2F%2Fmartoneonline.com%2Fstore%2F&vf=1" 
+          title="Martone Video"
+          allow="autoplay; encrypted-media; accelerometer; gyroscope; picture-in-picture" 
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+  </div>
+   <!-- New Content Row -->
+  <div class="row mt-4">
+    <div class="col">
+      <p>
+        Purchasing merchandise ahead of Martone’s shows not only shows support for his artistry 
+        but also allows fans to connect with his music on a deeper level. By wearing or using these items, 
+        you become part of the energy and excitement that fuels each performance. Plus, when you buy early, 
+        you help contribute to the success of the shows, ensuring Martone can continue delivering the 
+        unforgettable experiences he’s known for. Get your merchandise now and show up to the event in style, 
+        ready to represent <em>The Emperor of House Music</em>!
+      </p>
+    </div>
+  </div>
+</div>
+</div>
+</section>
+    <!-- Footer -->
+   <footer class="footer">
+
+    <!-- Horizontal Image Carousel -->
+    <section class="image-carousel-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center mb-4">
+            <h2 class="section-title" data-animation="fadeInUp">Martone in Motion</h2>
+            <p class="section-subtitle">A glimpse into the artistry and performances</p>
+          </div>
+        </div>
+
+        <div id="imageCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <!-- First Slide -->
+            <div class="carousel-item active">
+              <div class="row g-3">
+                <div class="col-md-3 col-6">
+                  <img
+                    src="https://martoneonline.com/wp-content/uploads/2025/01/Phoenix-Rising-Official-Album-Cover-1024x1024.avif"
+                    class="img-fluid rounded shadow" alt="Phoenix Rising">
+                </div>
+                <div class="col-md-3 col-6">
+                  <img src="https://martoneonline.com/wp-content/uploads/2024/08/Fever-Extremes-Deep-Fever-Remix-A1.png"
+                    class="img-fluid rounded shadow" alt="Fever Extremes Remix">
+                </div>
+                <div class="col-md-3 col-6">
+                  <img src="https://martoneonline.com/wp-content/uploads/2024/09/Groove-Tonight-Remixes.png"
+                    class="img-fluid rounded shadow" alt="Groove Tonight Remixes">
+                </div>
+                <div class="col-md-3 col-6">
+                  <img src="https://martoneonline.com/wp-content/uploads/2024/09/I-Give-My-Heart-to-You--1024x1024.png"
+                    class="img-fluid rounded shadow" alt="I Give My Heart To You">
+                </div>
+              </div>
+            </div>
+
+            <!-- Second Slide -->
+            <div class="carousel-item">
+              <div class="row g-3">
+                <div class="col-md-3 col-6">
+                  <img
+                    src="https://martoneonline.com/wp-content/uploads/2024/09/All-Through-the-Night-Remixes-Cover-1024x1024.webp"
+                    class="img-fluid rounded shadow" alt="All Through the Night Remixes">
+                </div>
+                <div class="col-md-3 col-6">
+                  <img
+                    src="https://martoneonline.com/wp-content/uploads/2024/09/Martones-House-Workout-Essentials-3000-x-3000-px-1024x1024.webp"
+                    class="img-fluid rounded shadow" alt="House Workout Essentials">
+                </div>
+                <div class="col-md-3 col-6">
+                  <img
+                    src="https://martoneonline.com/wp-content/uploads/2024/09/WERK-THAT-ALBUM-COVER-MARTONE-2025-1024x1024.png"
+                    class="img-fluid rounded shadow" alt="Werk That Album">
+                </div>
+                <div class="col-md-3 col-6">
+                  <img
+                    src="https://martoneonline.com/wp-content/uploads/2024/08/Fuck-Me-Baby-2025-Album-Cover-Martone-1.webp"
+                    class="img-fluid rounded shadow" alt="Fuck Me Baby 2025">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Carousel Controls -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#imageCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#imageCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Promo Bar Section (moved below carousel) -->
+    <section class="promo-bar">
+      <div class="promo-content">
+        <a href="https://martoneonline.com/2025/08/06/martone-2025-book-releases/">Unfiltered Truth: Two Must-Read Fall
+          2025 Books</a>
+        <a href="https://martoneonline.com/2025/07/16/usage-of-martone-likeness-rights-2025/">2025 Usage Guidelines:
+          Martone’s Image, Likeness, and Brand Identity</a>
+        <a href="https://martoneonline.com/2025/06/27/ekstase-by-martone-2025/">5 Reasons “EKSTASÉ” Is the Erotic Pop
+          Single 2025 Didn’t See Coming</a>
+        <a href="https://martoneonline.com/2025/06/24/martone-album-of-the-year-jma-2025/">10 Years in the Making:
+          Martone Scores Josie Music Awards Nomination</a>
+        <a href="https://martoneonline.com/2025/05/19/martone-on-reclaiming-my-power/">Martone’s Journey: Reclaiming
+          Power, Legacy & Creativity Through Music and Resilience</a>
+      </div>
+    </section>
+
+    <!-- Footer Bottom -->
+	
+<section class="quicklink-bar">
+            <div class="container" id="customised-footer">
+                <div class="row g-4">
+                    <div class="col-lg-4">
+                        <div class="footer-brand">
+                            <h3 class="footer-logo">MARTONE</h3>
+                            <p class="footer-description">
+                                The Emperor of House Music, accomplished author,
+                                former TV show host, and radio personality.
+                                Creating exceptional music and literary works
+                                that inspire and entertain.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2">
+                        <h5 class="footer-title">Quick Links</h5>
+                        <ul class="footer-links">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="biography.html">Biography</a></li>
+                            <li><a href="music.html">Music</a></li>
+                            <li><a href="press.html">Press</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-2">
+                        <h5 class="footer-title">Explore</h5>
+                        <ul class="footer-links">
+                            <li><a href="store.html">Store</a></li>
+                            <li><a href="tour.html">Tour</a></li>
+                            <li><a href="style.html">Style</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-2">
+                        <h5 class="footer-title">Connect</h5>
+                        <ul class="footer-links">
+                            <li><a href="subscribe.html">Subscribe</a></li>                        
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-2">
+                        <h5 class="footer-title">Follow</h5>
+                        <div class="footer-social">
+						<a target="_blank" class="social-link" href="https://facebook.com/therealmartone">
+                                <i class="fab fa-facebook-f"></i
+                            ></a>
+                            <a target="_blank" href="https://bsky.app/profile/martoneonline.com"class="social-link"
+                                ><i class="fab fa-twitter"></i
+                            ></a>
+                            <a target="_blank" href="https://www.pinterest.com/TheEmperorOfHouseMusic/" class="social-link"
+                                ><i class="fab fa-pinterest"></i
+                            ></a>
+                        </div>
+                    </div>
+                </div>
+
+                 <!-- Footer Bottom -->
+
+            </div>
+     </section>
+  </footer>
+<footer class="footer-section text-white py-4">
+  <div class="container">
+    <div class="row align-items-center text-center text-md-start">
+      
+      <!-- Left Column -->
+      <div class="col-md-6 mb-2 mb-md-0">
+        <p class="mb-0">
+          © 2025 Martone Inc. All rights reserved.
+        </p>
+      </div>
+      
+      <!-- Right Column -->
+      <div class="col-md-6 text-md-end">
+        <p class="mb-0 small">
+          Martone™ and The Emperor of House Music™ are trademarks used in connection with music, books, fashion, 
+          and entertainment services. Unauthorized use is prohibited.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</footer>
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
 
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/animations.js"></script>
 </body>
+ <style>
+        .tour-container {
+            max-width: 900px;
+            margin: 2rem auto;     
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        .tour-header { 
+            color: white;
+            padding: 2.5rem 2rem;
+            text-align: center;
+            position: relative;
+        }
+        .tour-header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100" opacity="0.1"><circle cx="50" cy="50" r="40" stroke="white" stroke-width="10" fill="none" /></svg>');
+            background-size: 200px;
+            opacity: 0.1;
+        }
+        .tour-header h1 {
+            font-weight: 800;
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+            letter-spacing: 1px;
+        }
+        .tour-header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .date-badge {
+            background: rgba(255, 255, 255, 0.15);
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            font-weight: 600;
+            display: inline-block;
+            margin-top: 1rem;
+        }
+        .tabs-container {
+            background-color: #f8f9fa;
+            padding: 0.5rem;
+            border-bottom: 1px solid #e9ecef;
+        }
+        .nav-pills .nav-link {
+            font-weight: 600;
+            color: #495057;
+            padding: 0.8rem 1.5rem;
+            border-radius: 50px;
+            transition: all 0.3s;
+            margin: 0 0.3rem;
+        }
+        .nav-pills .nav-link.active {
+            background: linear-gradient(120deg, #8e2de2, #4a00e0);
+            color: white;
+            box-shadow: 0 4px 15px rgba(142, 45, 226, 0.3);
+        }
+        .event-card {
+            border: none;
+            border-radius: 12px;
+            transition: all 0.3s;
+            margin-bottom: 1.5rem;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+        .event-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        .event-date {
+            background: linear-gradient(120deg, #8e2de2, #4a00e0);
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .event-day {
+            font-size: 1.8rem;
+            font-weight: 700;
+            line-height: 1;
+        }
+        .event-month {
+            font-size: 1rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin-top: 0.5rem;
+        }
+        .event-year {
+            font-size: 0.9rem;
+            opacity: 0.8;
+            margin-top: 0.3rem;
+        }
+        .event-details {
+            padding: 1.5rem;
+        }
+        .venue-name {
+            font-weight: 700;
+            font-size: 1.4rem;
+            color: #212529;
+            margin-bottom: 0.5rem;
+        }
+        .location {
+            color: #6c757d;
+            margin-bottom: 1.2rem;
+            display: flex;
+            align-items: center;
+        }
+        .location i {
+            margin-right: 0.5rem;
+        }
+        .btn-was-there {
+            background: linear-gradient(120deg, #8e2de2, #4a00e0);
+            color: white;
+            font-weight: 600;
+            padding: 0.6rem 1.5rem;
+            border-radius: 50px;
+            border: none;
+            transition: all 0.3s;
+            display: flex;
+            align-items: center;
+        }
+        .btn-was-there i {
+            margin-right: 0.5rem;
+        }
+        .btn-was-there:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(142, 45, 226, 0.4);
+        }
+        .no-dates {
+            text-align: center;
+            padding: 4rem 2rem;
+            color: #6c757d;
+        }
+        .no-dates i {
+            font-size: 4rem;
+            margin-bottom: 1.5rem;
+            color: #dee2e6;
+            opacity: 0.7;
+        }
+        .no-dates h3 {
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: #495057;
+        }
+        .btn-request {
+          background: var(--gradient-primary)!important;
+            color: white;
+            font-weight: 600;
+            padding: 0.8rem 2rem;
+            border-radius: 50px;
+            transition: all 0.3s;
+            border: none;
+            margin-top: 1.5rem;
+            display: inline-flex;
+            align-items: center;
+        }
+        .btn-request i {
+            margin-right: 0.5rem;
+        }
+		
+		.btn:hover{
+		color:white!important;
+		}
+        .btn-request:hover {
+            transform: translateY(-2px);
+           box-shadow:0 8px 25px rgba(102, 126, 234, 0.2);
+        }
+        .powered-by {
+            background-color: #f8f9fa;
+            padding: 1.5rem;
+            text-align: center;
+            border-top: 1px solid #e9ecef;
+        }
+        .logo {
+            max-width: 180px;
+            margin: 0 auto;
+            display: block;
+        }
+        @media (max-width: 768px) {
+            .tour-header h1 {
+                font-size: 2.2rem;
+            }
+            .event-date {
+                padding: 1rem;
+            }
+            .event-day {
+                font-size: 1.5rem;
+            }
+        }
+		/* Spacing between tab content and cards */
+.tab-pane .row {
+  margin-top: 1.5rem;
+}
+
+/* Event Date Styling */
+.event-date {
+  background: var(--gradient-primary) !important;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+  font-weight: bold;
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  min-height: 100%; /* full height */
+}
+
+.event-day {
+  font-size: 1.8rem;
+  display: block;
+}
+
+.event-month,
+.event-year {
+  font-size: 0.9rem;
+  display: block;
+}
+
+/* Button Styling */
+.btn-was-there {
+  background: var(--gradient-primary) !important;
+  color: #fff;
+  border-radius: 50px;
+  padding: 0.4rem 1rem;
+  font-weight: 600;
+  border: none;
+}
+
+/* Card hover effect */
+.event-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+#upcoming-tab.nav-link .active
+{background: var(--gradient-primary)!important;
+    border: var(--gradient-primary)!important;
+	}
+.event-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+.skip-link{
+display:none!important;}
+    </style>
 </html>

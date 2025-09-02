@@ -26,6 +26,14 @@
     };
 
     $(document).ready(function() {
+        // Define custom easing functions for jQuery (if not already defined)
+        if (!$.easing.easeInOutCubic) {
+            $.easing.easeInOutCubic = function (x, t, b, c, d) {
+                if ((t/=d/2) < 1) return c/2*t*t*t + b;
+                return c/2*((t-=2)*t*t + 2) + b;
+            };
+        }
+
         initializeAdvancedAnimations();
         initializeParticleSystem();
         initializeScrollAnimations();
@@ -425,12 +433,15 @@
     }
 
     /**
-     * Page Transition Effects (Disabled to prevent navigation issues)
+     * Page Transition Effects
      */
     function initializePageTransitions() {
-        // Page transitions disabled to allow normal navigation
-        // Smooth page transitions can interfere with menu clicks
-        console.log('Page transitions disabled for better navigation');
+        // Page load animation only - removed problematic navigation interceptor
+        $(window).on('load', function() {
+            $('.page-transition-overlay').animate({ width: '0%' }, 400, 'swing', function() {
+                $(this).remove();
+            });
+        });
     }
 
     /**
